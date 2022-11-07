@@ -1,4 +1,4 @@
-# Introduction {.unnumbered}
+# Welcome! {.unnumbered}
 
 Welcome to `repliMAT`!
 
@@ -11,5 +11,5 @@ Here you will find content, exercises and videos intended to either be followed 
 The materials are primarily aimed at researchers and their specific demands, but are applicable to all uses of MATLAB.
 
 ## Contributing
-{{< include CONTRIBUTING.md >}}
+{{< include ../CONTRIBUTING.md >}}
 

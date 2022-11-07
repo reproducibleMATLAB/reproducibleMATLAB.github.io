@@ -1,0 +1,27 @@
+---
+date: last-modified
+date-format: D MMM, YYYY
+---
+
+# Getting Started
+
+## Technical setup
+
+You'll need an installation of [MATLAB](https://www.mathworks.com/products/matlab.html), preferably a recent version (i.e. in the last year or so). Where a specific version is needed, or doesn't work with an example, it should be indicated alongside the exercise. See @sec-versions below for more info on versions.
+
+Follow the instructions on [MathWorks.com](https://mathworks.com) to install.
+
+No specific toolboxes are required.
+
+**Note** There is no guarantee that anything in these materials will work with [Octave](https://octave.org/). In fact it probably won't. But let us know if you try!
+
+### MATLAB versions {#sec-versions}
+A new version of MATLAB is released twice a year. The version numbers are comprised of the letter *'R'* followed by the calendar year and *'a'* if it's the first release in the year and *'b'* for the second. e.g. *R2022b*. Each version has improvements from the last and makes changes. It's a good idea to be using the most recent version of MATLAB in most cases.
+
+## How to use these materials
+
+### Where to start
+Anywhere you like! Hopefully the structure of the exercises included here means that you can dip in to any point that takes your fancy.
+
+### Prerequisites
+These materials assume that you're already familiar with the basics of programming in MATLAB. Variables, arrays, loops, reading in data and making plots *etc*.

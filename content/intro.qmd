@@ -1,0 +1,50 @@
+---
+date: last-modified
+date-format: D MMM, YYYY
+---
+
+# Introduction
+
+## What is research reproducibility?
+According to The Turing Way's definitions [@turingway], the term *reproducibility* refers to performing the *same* analysis on the *same* data for the *same* result. Other terms such as replicability and generalisability are used to refer to using different analyses or different data. This may not be your definition, but it's the one meant here and derived from the research done by the authors of The Turing Way (an exemplary guide to reproducible research software).
+
+The value of reproducibility in research is manifold. Research that is reproducible:
+
+* is easier to validate (perhaps even *possible* to validate),
+* has more long-term validity,
+* is more extensible,
+* reduces repetition,
+* decreases likelihood of losing methodology,
+
+among other benefits.
+
+Code is great for research reproducibility in lots of ways. Code describes a proceduralised sequence of operations to some data, with (arguably) zero ambiguity - great! That's just what we need for research. Where appropriate, code is an excellent solution to capturing and reproducing the steps taken to go from some raw data/input to some research conclusions.
+
+However, in practice it isn't always as easy as that. So this guide aims to provide researchers who code with the tools they need to make their MATLAB-based research (more) reproducible.
+
+## Open Research & Reproducibility
+Open research is the idea that the entire research lifecycle should be transparent for all to see. As an approach, open research continues to grow and many funders now stipulate that the research that they fund must follow open principles including the open availability of publications, data and code. How does this fit in with reproducibility? I would argue that if you are required to make your code available, whether that's for a publication, thesis or just to share it with a colleague, it would be a good thing for the code to actually work, and for it to be relatively easy to make it do so. It's commonplace in research to obtain some code and spend a significant period of time attempting to run it successfully, let alone validating that it produces something accurate. Therefore reproducibility is an important component of open research, though it need not be complicated.
+
+## Why MATLAB?
+MATLAB is a popular language in research.
+
+That's it.
+
+Whatever your technical opinion of a language, or whether it is proprietary or open source, for all sorts of reasons, MATLAB is used by a lot of researchers. It has a relatively long history as being a tool with a lot of useful mathematical and analytical features, is relatively user friendly and a large number of universities have a license.
+
+But, possibly because it's a proprietary language, most of the guidance and documentation comes from the organisation that develops it, MathWorks.
+
+In comparison to other programming languages currently popular in research such as Python & R, the availability of guidance around reproducibility is relatively limited.
+
+So that's why this guide has been developed, to allow those researchers who currently use MATLAB to make their research more reproducible and easier to share.
+
+Not because I think MATLAB is the best, or the worst. I just think that all research should aim to be as reproducible as possible and that you should use the best tool for the job, even if that's just the one that you currently know.
+
+Researchers have said to me:
+
+> I *know* I should rewrite this in python so that I can share it.
+
+But realistically, the likelihood in most cases is that you'll just move on to your next project. The demands and incentives of the research world mean that investigating a new thing carries much more value than refining an existing project to a higher standard.
+
+So let's make the projects we're working on **now** as good as they can be.
+

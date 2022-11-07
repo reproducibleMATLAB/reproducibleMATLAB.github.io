@@ -2,7 +2,7 @@ Contributions to the `repliMAT` materials are welcomed! Please follow the guidan
 
 The project's source code and development is managed at its [GitHub repository][repo]. There are a few ways to contribute, depending on whether you want to make changes to the source code or not.
 
-In all interactions, please abide by the [code of conduct](/CODE_OF_CONDUCT.md)
+In all interactions, please abide by the [code of conduct](../CODE_OF_CONDUCT.md)
 
 ## Issues
 [Open a new issue](https://github.com/davidwilby/repliMAT/issues/new) to describe a bug, error or to request changes.

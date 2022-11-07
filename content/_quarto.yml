@@ -3,15 +3,21 @@ project:
   output-dir: _book
 
 book:
-  title: "`repliMAT`: *A* Guide to Reproducible `MATLAB`"
+  title: "`repliMAT`: *A* Guide to Reproducible MATLAB"
   author: "David Wilby"
-  date: "today"
+  date: "last-modified"
   date-format: "D MMM, YYYY"
   lang: en-GB
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - getting-started.qmd
+    - part: reproducibility/index.qmd
+      chapters: 
+        - reproducibility/projects.qmd
+    - part: extra-credit/index.qmd
+      chapters: 
+        - extra-credit/testing.qmd
     - references.qmd
     - _license.qmd
 
