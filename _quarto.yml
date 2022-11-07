@@ -5,7 +5,8 @@ project:
 book:
   title: "`repliMAT`: *A* Guide to Reproducible `MATLAB`"
   author: "David Wilby"
-  date: "09/08/2022"
+  date: "today"
+  date-format: "D MMM, YYYY"
   lang: en-GB
   chapters:
     - index.qmd
@@ -15,6 +16,7 @@ book:
     - _license.qmd
 
 bibliography: references.bib
+csl: nature.csl
 
 format:
   html:
