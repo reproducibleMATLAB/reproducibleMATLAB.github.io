@@ -5,4 +5,14 @@ date-format: D MMM, YYYY
 
 # Reproducibility
 
-:construction: *Nothing here yet! Check back later.* :construction:
+## Introduction
+
+In our practical exercises, we're going to be exploring, plotting and analysing some data from The University of Dayton - Environmental Protection Agency Average Daily Temperature Archive [@DaytonTempDataset] which contains daily average temperatures for cities around the world.
+
+## Download the data
+Firstly, we're going to need to download some data to work with.
+
+The dataset we're using is freely available for non-commercial use.
+
+Remember, that we should document how to get hold of the data or, even better, provide code to download it along with our codebase.
+
