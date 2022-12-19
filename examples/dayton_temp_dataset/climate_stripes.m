@@ -45,4 +45,5 @@ for i=1:size(tt, 1)
     set(gca,'XTick',[])
     set(gca,'YTick',[])
     set(gca, 'xlim',[min(tt.date.Year) max(tt.date.Year)])
+    if bar_heights; set(gca,'color',[0 0 0]); end
 end

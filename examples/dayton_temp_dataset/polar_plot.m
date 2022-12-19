@@ -16,7 +16,7 @@ monthNames = month(datetime(1, 1:12, 1), 's');
 cmap = flip(colormap(turbo(size(tt, 1))), 1);
 
 alpha_reduction_factor = 0.98;
-lines = [];
+plotted_lines = [];
 line_new_alpha = 1;
 
 % calculate the average temperature per calendar month over the whole timeseries
@@ -32,7 +32,7 @@ monthly_mean = table(month', avg_temp', 'VariableNames', ["Month", "Avg_Temp"]);
 write_gif = true;
 start_new_image_file = true;
 filename = "temperature_polar_plot.gif";
-gif_delay_time = 0.02;
+gif_delay_time = 0.04;
 
 for i=2:size(tt, 1)
     date = tt.date(i);
@@ -65,13 +65,13 @@ for i=2:size(tt, 1)
     addprop(p, "alpha");
     p.alpha = 1;
     
-    for j = 1:size(lines, 1)
-        line_old_alpha = lines(j).alpha;
+    for j = 1:size(plotted_lines, 1)
+        line_old_alpha = plotted_lines(j).alpha;
         line_new_alpha = line_old_alpha * alpha_reduction_factor;
-        lines(j).Color = [lines(j).Color line_new_alpha];
-        lines(j).alpha = line_new_alpha;
+        plotted_lines(j).Color = [plotted_lines(j).Color line_new_alpha];
+        plotted_lines(j).alpha = line_new_alpha;
     end
-    lines = [lines; p];
+    plotted_lines = [plotted_lines; p];
     
     ax.ThetaZeroLocation = 'top';
     ax.ThetaDir = 'clockwise';
