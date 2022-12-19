@@ -1,12 +1,17 @@
-function [cleaned_data] = read_temperature_file(path)
-%READ_DATA Reads in temperature & precipitation text files as a table.
+function [cleaned_data] = read_temperature_files(path)
+%READ_TEMPERATURE_FILES Reads in temperature & precipitation text files as a table.
+% Multiple files can be passed in as arguments and are concatendated
+% together in the order that they are provided.
 
-arguments
-    path {mustBeFile} = fullfile("data","milton_MA.csv")
+arguments (Repeating)
+    path {mustBeFile}
 end
 
-% read in the raw data file as a matrix
-raw_data = readtable(path, 'FileType', 'delimitedtext');
+raw_data = table();
+for p = path    % read in the raw data file as a matrix
+    file_data = readtable(p{:}, 'FileType', 'delimitedtext');
+    raw_data = vertcat(raw_data, file_data);
+end
 
 % First clean the data
 % Temperatures of 'NA' in the raw file are read in by readtable as 'NaN' and are empty rows so we'll remove them.
