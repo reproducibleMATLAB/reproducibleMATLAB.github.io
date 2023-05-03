@@ -7,7 +7,6 @@ book:
   author: "David Wilby"
   date: "last-modified"
   date-format: "D MMM, YYYY"
-  lang: en-GB
   chapters:
     - index.qmd
     - intro.qmd
