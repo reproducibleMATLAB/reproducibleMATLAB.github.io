@@ -20,7 +20,7 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       - run: |
-          mkdir build
+          cd content
           quarto render 
       
       - name: Deploy 🚀
