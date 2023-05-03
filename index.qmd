@@ -1,5 +1,0 @@
-# Introduction {.unnumbered}
-
-Welcome to `repliMAT`!
-
-:construction: **This book is very much under development** :construction:

@@ -1,0 +1,15 @@
+# Welcome! {.unnumbered}
+
+Welcome to `repliMAT`!
+
+:construction: **This book is very much under development** :construction:
+
+This is a resource for learning and teaching about developing reproducible and sustainable code in the MATLAB programming language.
+
+Here you will find content, exercises and videos intended to either be followed alone or with a group, or taught as part of a workshop.
+
+The materials are primarily aimed at researchers and their specific demands, but are applicable to all uses of MATLAB.
+
+## Contributing
+{{< include ../CONTRIBUTING.md >}}
+

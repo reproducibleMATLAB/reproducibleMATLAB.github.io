@@ -1,0 +1,43 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "`repliMAT`: *A* Guide to Reproducible MATLAB"
+  author: "David Wilby"
+  date: "last-modified"
+  date-format: "D MMM, YYYY"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - getting-started.qmd
+    - part: code-style/index.qmd
+      chapters: 
+        - code-style/variables.qmd
+        - code-style/documentation.qmd
+        - code-style/functions.qmd
+        - code-style/organisation.qmd
+    - part: reproducibility/index.qmd
+      chapters: 
+        - reproducibility/projects.qmd
+    - part: version-control/index.qmd
+    - part: extra-credit/index.qmd
+      chapters: 
+        - extra-credit/testing.qmd
+    - references.qmd
+    - _license.qmd
+
+bibliography: references.bib
+csl: nature.csl
+
+format:
+  html:
+    from: markdown+emoji
+    theme: 
+      light: flatly
+      dark: darkly
+  pdf:
+    documentclass: scrreprt
+
+
+
