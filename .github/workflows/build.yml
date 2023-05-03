@@ -20,10 +20,10 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       - run: |
-          mkdir build
+          cd content
           quarto render 
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _book # The folder the action should deploy.
+          folder: content/_book # The folder the action should deploy.
