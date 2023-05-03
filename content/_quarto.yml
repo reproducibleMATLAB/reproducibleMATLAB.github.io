@@ -26,6 +26,16 @@ book:
         - extra-credit/testing.qmd
     - references.qmd
     - _license.qmd
+  sidebar: 
+    tools:
+      - icon: github
+        href: https://github.com/reproducibleMATLAB/reproducibleMATLAB.github.io
+        aria-label: GitHub
+        target: _blank
+      - icon: chat-right-text-fill
+        href: https://reproducibleMATLAB.github.io/blog
+        aria-label: Blog
+        target: _blank
 
 bibliography: references.bib
 csl: nature.csl
