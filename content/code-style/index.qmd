@@ -5,4 +5,4 @@ date-format: D MMM, YYYY
 
 # Writing cleaner code
 
-:construction: *Nothing here yet! Check back later.* :construction:
+Whilst this is primarily a guide to writing more *reproducible* MATLAB, I would argue that writing *cleaner* code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.

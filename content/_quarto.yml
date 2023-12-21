@@ -10,7 +10,6 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - getting-started.qmd
     - part: code-style/index.qmd
       chapters: 
         - code-style/variables.qmd
@@ -21,6 +20,9 @@ book:
       chapters: 
         - reproducibility/projects.qmd
     - part: version-control/index.qmd
+    - part: exercises/index.qmd
+      chapters: 
+        - exercises/getting-started.qmd
     - part: extra-credit/index.qmd
       chapters: 
         - extra-credit/testing.qmd

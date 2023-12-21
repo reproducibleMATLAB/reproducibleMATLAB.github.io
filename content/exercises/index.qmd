@@ -1,0 +1,23 @@
+---
+date: last-modified
+date-format: D MMM, YYYY
+---
+
+# Exercises
+
+## Introduction
+
+![](../assets/images/climate_stripes.png)
+
+In this series of exercises, we're going to work with some research code which may be typical of what many of us would write and walk through how to transform this into a significantly more reproducible project.
+
+We'll work with some publically available data on surface temperatures in the USA from the late 19th to the early 21st century and create some interesting visualisations.
+
+To start with, the project will hopefully look similar to what many of us would develop in our work, but it may not be as reproducible as it could be. By the end, we should have a project that we can easily share with anyone who can run it and generate the same results, and even use the code with different data.
+
+## How to work with these exercises
+
+You'll either need a recent copy of MATLAB installed on your computer, or you can follow the links alongside the exercises to open the examples in MATLAB online.
+
+To get hold of the code and use it on your own computer, you can use `git` to "clone" the code from GitHub, or just download it. Instructions are in the "Getting started" section.
+
