@@ -19,13 +19,13 @@ book:
     - part: reproducibility/index.qmd
       chapters: 
         - reproducibility/projects.qmd
-    - part: version-control/index.qmd
     - part: exercises/index.qmd
       chapters: 
         - exercises/getting-started.qmd
     - part: extra-credit/index.qmd
       chapters: 
         - extra-credit/testing.qmd
+        - extra-credit/version-control.qmd
     - references.qmd
     - _license.qmd
   sidebar: 
