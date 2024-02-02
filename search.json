@@ -155,16 +155,6 @@
     ]
   },
   {
-    "objectID": "version-control/index.html",
-    "href": "version-control/index.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "🚧 Nothing here yet! Check back later. 🚧",
-    "crumbs": [
-      "Version Control"
-    ]
-  },
-  {
     "objectID": "exercises/index.html",
     "href": "exercises/index.html",
     "title": "Exercises",
@@ -236,6 +226,17 @@
     "crumbs": [
       "Extra Credit",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Testing</span>"
+    ]
+  },
+  {
+    "objectID": "extra-credit/version-control.html",
+    "href": "extra-credit/version-control.html",
+    "title": "9  Version Control",
+    "section": "",
+    "text": "🚧 Nothing here yet! Check back later. 🚧",
+    "crumbs": [
+      "Extra Credit",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Version Control</span>"
     ]
   },
   {
