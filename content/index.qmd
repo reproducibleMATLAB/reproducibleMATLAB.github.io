@@ -8,7 +8,17 @@ This is a resource for learning and teaching about developing reproducible and s
 
 Here you will find content, exercises and videos intended to either be followed alone or with a group, or taught as part of a workshop.
 
-The materials are primarily aimed at researchers and their specific demands, but are applicable to all uses of MATLAB.
+The materials are primarily aimed at researchers and their specific demands, but should be applicable to all uses of MATLAB.
+
+## How to use this guide
+
+This guide is split into two main parts: a reference guide and a set of exercises.
+
+The intention is for the reference guide (begin [here](intro.qmd)) to act as a place to learn about the reasoning behind concepts in reproducible MATLAB project design, as well as somewhere to come back to as a reference when working on your own project.
+
+The [exercises](exercises/index.qmd) are a worked-through set of examples that can either be taught as part of a workshop or followed on your own.
+
+The third part of these two main parts (:roll_eyes:) is the [extra credit](extra-credit/) section, containing concepts that aren't *absolutely* essential for reproducibility, but are considered good/excellent practice in programming.
 
 ## Contributing
 {{< include ../CONTRIBUTING.md >}}
