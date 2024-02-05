@@ -26,6 +26,7 @@ book:
       chapters: 
         - extra-credit/testing.qmd
         - extra-credit/version-control.qmd
+    - appendices/code-style-cheatsheet.qmd
     - references.qmd
     - _license.qmd
     - privacypolicy.qmd

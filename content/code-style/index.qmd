@@ -5,4 +5,22 @@ date-format: D MMM, YYYY
 
 # Writing cleaner code
 
-Whilst this is primarily a guide to writing more *reproducible* MATLAB, I would argue that writing *cleaner* code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.
+Whilst this is primarily a guide to writing more *reproducible* MATLAB, I would argue that writing *cleaner* code is an important step.
+It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.
+
+We'll explain this in several steps:
++ variables
++ functions
++ codebase organisation (it's not just the programming that helps)
++ how to document your code.
+
+One significant reference here is the book "The Elements of MATLAB Style" by Richard Johnson [@Johnson_2010] which acts as the *de facto* community standard for style when it comes to programming in MATLAB. As well as the book itself, there are several resources based on it that have the core elements of its teachings on code style in MATLAB:
+
++ cheat sheet - [available from MATLAB file exhange](https://uk.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet) - much better than reading the actual book
++ updates to the book - [also on file exchange](https://uk.mathworks.com/matlabcentral/fileexchange/36540-updates-to-the-elements-of-matlab-style)
+
+The cheat sheet is also reproduced on this site here for ease of searching and for quick reference.
+
+With any programming language, it pays to disavow yourself of any *opinions* that you may have and save yourself the time of thinking about how to write your code by just following the standard practices of the community.
+Your code may **run** perfectly well. You may think that a certain way of function-naming is slightly better.
+But if we all stick to the same standards, we all have an easier time of reading each other's code and don't have to waste time arguing (yes, this is something that people argue about.)
