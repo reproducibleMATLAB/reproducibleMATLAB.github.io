@@ -3,6 +3,6 @@ date: last-modified
 date-format: D MMM, YYYY
 ---
 
-# Docummentation
+# Documentation
 
 :construction: *Nothing here yet! Check back later.* :construction:

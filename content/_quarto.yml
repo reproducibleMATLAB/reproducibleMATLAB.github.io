@@ -13,9 +13,9 @@ book:
     - part: code-style/index.qmd
       chapters: 
         - code-style/variables.qmd
-        - code-style/documentation.qmd
         - code-style/functions.qmd
         - code-style/organisation.qmd
+        - code-style/documentation.qmd
     - part: reproducibility/index.qmd
       chapters: 
         - reproducibility/projects.qmd

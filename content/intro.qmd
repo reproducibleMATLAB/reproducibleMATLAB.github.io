@@ -8,7 +8,7 @@ date-format: D MMM, YYYY
 ## What is research reproducibility?
 According to The Turing Way's definitions [@turingway], the term *reproducibility* refers to performing the *same* analysis on the *same* data for the *same* result. Other terms such as replicability and generalisability are used to refer to using different analyses or different data. This may not be your definition, but it's the one meant here and derived from the research done by the authors of The Turing Way (an exemplary guide to reproducible research software).
 
-The value of reproducibility in research is manifold. Research that is reproducible:
+Research that is reproducible has many benefits, it:
 
 * is easier to validate (perhaps even *possible* to validate),
 * has more long-term validity,
@@ -16,17 +16,41 @@ The value of reproducibility in research is manifold. Research that is reproduci
 * reduces repetition,
 * decreases likelihood of losing methodology,
 
-among other benefits.
+among many others.
 
 Code is great for research reproducibility in lots of ways. Code describes a proceduralised sequence of operations to some data, with (arguably) zero ambiguity - great! That's just what we need for research. Where appropriate, code is an excellent solution to capturing and reproducing the steps taken to go from some raw data/input to some research conclusions.
 
 However, in practice it isn't always as easy as that. So this guide aims to provide researchers who code with the tools they need to make their MATLAB-based research (more) reproducible.
 
 ## Open Research & Reproducibility
-Open research is the idea that the entire research lifecycle should be transparent for all to see. As an approach, open research continues to grow and many funders now stipulate that the research that they fund must follow open principles including the open availability of publications, data and code. How does this fit in with reproducibility? I would argue that if you are required to make your code available, whether that's for a publication, thesis or just to share it with a colleague, it would be a good thing for the code to actually work, and for it to be relatively easy to make it do so. It's commonplace in research to obtain some code and spend a significant period of time attempting to run it successfully, let alone validating that it produces something accurate. Therefore reproducibility is an important component of open research, though it need not be complicated.
+Open research is the idea that the entire research lifecycle should be transparent for all to see. 
+As an approach, open research continues to grow and many funders now stipulate that the research that they fund must follow open principles including the open availability of publications, data and code. 
+How does this fit in with reproducibility? I would argue that if you are required to make your code available, whether that's for a publication, thesis or just to share it with a colleague, 
+it would be a good thing for the code to actually work, and for it to be relatively easy to make it do so. 
+It's commonplace in research to obtain some code and spend a significant period of time attempting to run it successfully, let alone validating that it produces something accurate. 
+Therefore reproducibility is an important component of open research, though it need not be complicated.
+
+## Is it worth the effort?
+
+There's no denying that learning and implementing the approaches required to enable reproducible research is *yet another* thing to do.
+As researchers we already have so many different skills to master: domain expertise, writing, graphic design, experimental design, public speaking, statistics. The list goes on.
+So why should we *voluntarily* make our programming practices even more involved than they already are.
+Many of us don't even *like* programming, so can't we just get the job done?
+
+Yes and no. As mentioned above, many funders and publishers require open research practices, so as far as I'm concerned, the code should actually work when we share it.
+Understandably, people are often resistant to making their practices even more complicated. The culture still hasn't really shifted to expecting fully reproducible research code.
+However, I would give most researchers the benefit of the doubt and assume that most want their work to be verifiably correct.
+
+Moreso than just being "the right thing to do" - making one's research more reproducible has all sorts of benefits. Let's expand on the benefits mentioned above.
+If we want to check that our work is correct, being able to send it to a colleague who can then actually make it run is a huge advantage. I'm sure we've all been in the situation where someone sends a zip file of code with no instructions and we spend ages trying to make it work.
+Reproducible research saves us and our colleagues and collaborators time by simplifying this process, allowing us to actually get on with the research we're interested in.
+If we publish some work and people are able to make it work, they're more likely to build upon it and cite our work. This accelerates research and gets us the recognition we deserve.
+Importantly, when we come back to our work in the future, we may actually understand what we did and be able to build upon it ourselves. Imagine that!
 
 ## Why MATLAB?
-MATLAB is a popular language in research.
+Why is MATLAB a tool that we should care about when it comes to reproducible practices?
+
+Because MATLAB is a popular language in research.
 
 That's it.
 
@@ -40,11 +64,11 @@ So that's why this guide has been developed, to allow those researchers who curr
 
 Not because I think MATLAB is the best, or the worst. I just think that all research should aim to be as reproducible as possible and that you should use the best tool for the job, even if that's just the one that you currently know.
 
-Researchers have said to me:
+Many researchers using MATLAB have said to me:
 
 > I *know* I should rewrite this in python so that I can share it.
 
-But realistically, the likelihood in most cases is that you'll just move on to your next project. The demands and incentives of the research world mean that investigating a new thing carries much more value than refining an existing project to a higher standard.
+But realistically, the likelihood is that you'll just move on to your next project. The demands and incentives of the research world mean that investigating a new thing carries much more value than refining an existing project to a higher standard.
 
 So let's make the projects we're working on **now** as good as they can be.
 
