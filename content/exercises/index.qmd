@@ -3,9 +3,7 @@ date: last-modified
 date-format: D MMM, YYYY
 ---
 
-# Exercises
-
-## Introduction
+# Introduction
 
 ![](../assets/images/boston-stripes.png)
 

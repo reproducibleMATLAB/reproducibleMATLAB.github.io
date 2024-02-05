@@ -10,17 +10,20 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - part: code-style/index.qmd
+    - part: "Writing Cleaner Code"
       chapters: 
+        - code-style/index.qmd
         - code-style/variables.qmd
         - code-style/functions.qmd
         - code-style/organisation.qmd
         - code-style/documentation.qmd
-    - part: reproducibility/index.qmd
+    - part: "Reproducibility"
       chapters: 
+        - reproducibility/index.qmd
         - reproducibility/projects.qmd
-    - part: exercises/index.qmd
+    - part: "Exercises"
       chapters: 
+        - exercises/index.qmd
         - exercises/getting-started.qmd
     - part: extra-credit/index.qmd
       chapters: 
