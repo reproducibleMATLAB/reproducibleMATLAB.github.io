@@ -20,12 +20,14 @@ book:
     - part: "Reproducibility"
       chapters: 
         - reproducibility/index.qmd
+        - reproducibility/dependencies.qmd
+        - reproducibility/versioning.qmd
         - reproducibility/projects.qmd
     - part: "Exercises"
       chapters: 
         - exercises/index.qmd
         - exercises/getting-started.qmd
-    - part: extra-credit/index.qmd
+    - part: "Extra Credit"
       chapters: 
         - extra-credit/testing.qmd
         - extra-credit/version-control.qmd
