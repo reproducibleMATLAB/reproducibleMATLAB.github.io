@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "`repliMAT`: *A* Guide to Reproducible MATLAB"
+  title: "**repliMAT**: *A* Guide to Reproducible MATLAB"
   author: "David Wilby"
   date: "last-modified"
   date-format: "D MMM, YYYY"

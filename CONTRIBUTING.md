@@ -1,4 +1,4 @@
-Contributions to the `repliMAT` materials are welcomed! Please follow the guidance below prior to making contributions to ensure that your kind efforts do not go to waste.
+Contributions to the **repliMAT** materials are welcomed! Please follow the guidance below prior to making contributions to ensure that your kind efforts do not go to waste.
 
 The project's source code and development is managed at its [GitHub repository][repo]. There are a few ways to contribute, depending on whether you want to make changes to the source code or not.
 
