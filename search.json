@@ -54,7 +54,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "1.1 What is research reproducibility?\nAccording to The Turing Way’s definitions1, the term reproducibility refers to performing the same analysis on the same data for the same result. Other terms such as replicability and generalisability are used to refer to using different analyses or different data. This may not be your definition, but it’s the one meant here and derived from the research done by the authors of The Turing Way (an exemplary guide to reproducible research software).\nThe value of reproducibility in research is manifold. Research that is reproducible:\namong other benefits.\nCode is great for research reproducibility in lots of ways. Code describes a proceduralised sequence of operations to some data, with (arguably) zero ambiguity - great! That’s just what we need for research. Where appropriate, code is an excellent solution to capturing and reproducing the steps taken to go from some raw data/input to some research conclusions.\nHowever, in practice it isn’t always as easy as that. So this guide aims to provide researchers who code with the tools they need to make their MATLAB-based research (more) reproducible.",
+    "text": "1.1 What is research reproducibility?\nAccording to The Turing Way’s definitions1, the term reproducibility refers to performing the same analysis on the same data for the same result. Other terms such as replicability and generalisability are used to refer to using different analyses or different data. This may not be your definition, but it’s the one meant here and derived from the research done by the authors of The Turing Way (an exemplary guide to reproducible research software).\nResearch that is reproducible has many benefits, it:\namong many others.\nCode is great for research reproducibility in lots of ways. Code describes a proceduralised sequence of operations to some data, with (arguably) zero ambiguity - great! That’s just what we need for research. Where appropriate, code is an excellent solution to capturing and reproducing the steps taken to go from some raw data/input to some research conclusions.\nHowever, in practice it isn’t always as easy as that. So this guide aims to provide researchers who code with the tools they need to make their MATLAB-based research (more) reproducible.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -80,11 +80,21 @@
     ]
   },
   {
+    "objectID": "intro.html#is-it-worth-the-effort",
+    "href": "intro.html#is-it-worth-the-effort",
+    "title": "1  Introduction",
+    "section": "1.3 Is it worth the effort?",
+    "text": "1.3 Is it worth the effort?\nThere’s no denying that learning and implementing the approaches required to enable reproducible research is yet another thing to do. As researchers we already have so many different skills to master: domain expertise, writing, graphic design, experimental design, public speaking, statistics. The list goes on. So why should we voluntarily make our programming practices even more involved than they already are. Many of us don’t even like programming, so can’t we just get the job done?\nYes and no. As mentioned above, many funders and publishers require open research practices, so as far as I’m concerned, the code should actually work when we share it. Understandably, people are often resistant to making their practices even more complicated. The culture still hasn’t really shifted to expecting fully reproducible research code. However, I would give most researchers the benefit of the doubt and assume that most want their work to be verifiably correct.\nMoreso than just being “the right thing to do” - making one’s research more reproducible has all sorts of benefits. Let’s expand on the benefits mentioned above. If we want to check that our work is correct, being able to send it to a colleague who can then actually make it run is a huge advantage. I’m sure we’ve all been in the situation where someone sends a zip file of code with no instructions and we spend ages trying to make it work. Reproducible research saves us and our colleagues and collaborators time by simplifying this process, allowing us to actually get on with the research we’re interested in. If we publish some work and people are able to make it work, they’re more likely to build upon it and cite our work. This accelerates research and gets us the recognition we deserve. Importantly, when we come back to our work in the future, we may actually understand what we did and be able to build upon it ourselves. Imagine that!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
     "objectID": "intro.html#why-matlab",
     "href": "intro.html#why-matlab",
     "title": "1  Introduction",
-    "section": "1.3 Why MATLAB?",
-    "text": "1.3 Why MATLAB?\nMATLAB is a popular language in research.\nThat’s it.\nWhatever your technical opinion of a language, or whether it is proprietary or open source, for all sorts of reasons, MATLAB is used by a lot of researchers. It has a relatively long history as being a tool with a lot of useful mathematical and analytical features, is relatively user friendly and a large number of universities have a license.\nBut, possibly because it’s a proprietary language, most of the guidance and documentation comes from the organisation that develops it, MathWorks.\nIn comparison to other programming languages currently popular in research such as Python & R, the availability of guidance around reproducibility is relatively limited.\nSo that’s why this guide has been developed, to allow those researchers who currently use MATLAB to make their research more reproducible and easier to share.\nNot because I think MATLAB is the best, or the worst. I just think that all research should aim to be as reproducible as possible and that you should use the best tool for the job, even if that’s just the one that you currently know.\nResearchers have said to me:\n\nI know I should rewrite this in python so that I can share it.\n\nBut realistically, the likelihood in most cases is that you’ll just move on to your next project. The demands and incentives of the research world mean that investigating a new thing carries much more value than refining an existing project to a higher standard.\nSo let’s make the projects we’re working on now as good as they can be.\n\n\n\n\n1. The Turing Way Community. The Turing Way: A handbook for reproducible, ethical and collaborative research. (2022) doi:10.5281/zenodo.3233853.",
+    "section": "1.4 Why MATLAB?",
+    "text": "1.4 Why MATLAB?\nWhy is MATLAB a tool that we should care about when it comes to reproducible practices?\nBecause MATLAB is a popular language in research.\nThat’s it.\nWhatever your technical opinion of a language, or whether it is proprietary or open source, for all sorts of reasons, MATLAB is used by a lot of researchers. It has a relatively long history as being a tool with a lot of useful mathematical and analytical features, is relatively user friendly and a large number of universities have a license.\nBut, possibly because it’s a proprietary language, most of the guidance and documentation comes from the organisation that develops it, MathWorks.\nIn comparison to other programming languages currently popular in research such as Python & R, the availability of guidance around reproducibility is relatively limited.\nSo that’s why this guide has been developed, to allow those researchers who currently use MATLAB to make their research more reproducible and easier to share.\nNot because I think MATLAB is the best, or the worst. I just think that all research should aim to be as reproducible as possible and that you should use the best tool for the job, even if that’s just the one that you currently know.\nMany researchers using MATLAB have said to me:\n\nI know I should rewrite this in python so that I can share it.\n\nBut realistically, the likelihood is that you’ll just move on to your next project. The demands and incentives of the research world mean that investigating a new thing carries much more value than refining an existing project to a higher standard.\nSo let’s make the projects we’re working on now as good as they can be.\n\n\n\n\n1. The Turing Way Community. The Turing Way: A handbook for reproducible, ethical and collaborative research. (2022) doi:10.5281/zenodo.3233853.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -111,36 +121,36 @@
     ]
   },
   {
-    "objectID": "code-style/documentation.html",
-    "href": "code-style/documentation.html",
-    "title": "3  Docummentation",
-    "section": "",
-    "text": "🚧 Nothing here yet! Check back later. 🚧",
-    "crumbs": [
-      "Writing cleaner code",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Docummentation</span>"
-    ]
-  },
-  {
     "objectID": "code-style/functions.html",
     "href": "code-style/functions.html",
-    "title": "4  Functions",
+    "title": "3  Functions",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
       "Writing cleaner code",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Functions</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
   {
     "objectID": "code-style/organisation.html",
     "href": "code-style/organisation.html",
-    "title": "5  Project Organisation",
+    "title": "4  Project Organisation",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
       "Writing cleaner code",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Project Organisation</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Project Organisation</span>"
+    ]
+  },
+  {
+    "objectID": "code-style/documentation.html",
+    "href": "code-style/documentation.html",
+    "title": "5  Documentation",
+    "section": "",
+    "text": "🚧 Nothing here yet! Check back later. 🚧",
+    "crumbs": [
+      "Writing cleaner code",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Documentation</span>"
     ]
   },
   {
