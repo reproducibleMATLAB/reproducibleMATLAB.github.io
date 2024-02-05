@@ -523,22 +523,22 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 <div class="sourceCode" id="cb6"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">isValid</span> <span class="op">=</span> (<span class="va">v</span> <span class="op">&gt;=</span> <span class="va">lowerLimit</span>) <span class="op">&amp;</span> (<span class="va">v</span> <span class="op">&lt;=</span> <span class="va">upperLimit</span>)<span class="op">;</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">isNew</span> <span class="op">=</span> <span class="va">ismember</span>(<span class="va">v</span><span class="op">,</span> <span class="va">valueArray</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>Avoid the conditional expression <code>if 0</code>.</p></li>
-<li><p>An <code>if-else</code> sequence should include the else condition.</p></li>
-<li><p>The usual case should be put in the <code>if</code>-part and the exception in the <code>else</code>-part of an <code>if-else</code> statement.</p></li>
-<li><p>A <code>switch</code> statement should include the <code>otherwise</code> condition.</p></li>
-<li><p>Use a <code>switch</code> sequence if the variable is a string.</p></li>
-<li><p>Use a <code>switch</code> statement in place of many <code>if-elseif-else</code> statements when possible.</p></li>
+<li>Avoid the conditional expression <code>if 0</code>.</li>
+<li>An <code>if-else</code> sequence should include the else condition.</li>
+<li>The usual case should be put in the <code>if</code>-part and the exception in the <code>else</code>-part of an <code>if-else</code> statement.</li>
+<li>A <code>switch</code> statement should include the <code>otherwise</code> condition.</li>
+<li>Use a <code>switch</code> sequence if the variable is a string.</li>
+<li>Use a <code>switch</code> statement in place of many <code>if-elseif-else</code> statements when possible.</li>
 </ul>
 </section>
 <section id="general-1" class="level2">
 <h2 class="anchored" data-anchor-id="general-1">General</h2>
 <ul>
-<li><p>Avoid cryptic code. You should be able to look at it a month from now and know what it does.</p></li>
-<li><p>Use parentheses for clarity even if not need because of operator precedence.</p></li>
-<li><p>Minimize the use of numbers in expressions. Use a named constant instead.</p></li>
-<li><p>Always use a zero before the decimal point: <code>THRESHOLD = 0.5</code></p></li>
-<li><p>Make floating point comparisons with caution.</p></li>
+<li>Avoid cryptic code. You should be able to look at it a month from now and know what it does.</li>
+<li>Use parentheses for clarity even if not need because of operator precedence.</li>
+<li>Minimize the use of numbers in expressions. Use a named constant instead.</li>
+<li>Always use a zero before the decimal point: <code>THRESHOLD = 0.5</code></li>
+<li>Make floating point comparisons with caution.</li>
 </ul>
 </section>
 </section>
@@ -594,9 +594,9 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 <section id="documentation" class="level2">
 <h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
 <ul>
-<li><p>Write header comments with text markup to provide user documentation. Include sections that correspond to a help page: syntax, description, example, and see also.</p></li>
-<li><p>Consider writing the documentation first to better define inputs, outputs and functionality.</p></li>
-<li><p>Consider using a source control tool such as SVN or GIT. If you do not use a source control tool, document changes by adding change history comments after the function header or near the top of the script.</p></li>
+<li>Write header comments with text markup to provide user documentation. Include sections that correspond to a help page: syntax, description, example, and see also.</li>
+<li>Consider writing the documentation first to better define inputs, outputs and functionality.</li>
+<li>Consider using a source control tool such as SVN or GIT. If you do not use a source control tool, document changes by adding change history comments after the function header or near the top of the script.</li>
 </ul>
 
 
