@@ -41,10 +41,7 @@ book:
   google-analytics: 
     tracking-id: "G-WMTSZ2TVF9"
     anonymize-ip: true
-  cookie-consent: 
-    type: express
-    style: headline
-    palette: dark
+    storage: none
 
 bibliography: references.bib
 csl: nature.csl
