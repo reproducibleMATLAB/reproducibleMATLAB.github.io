@@ -28,6 +28,7 @@ book:
         - extra-credit/version-control.qmd
     - references.qmd
     - _license.qmd
+    - privacypolicy.qmd
   sidebar: 
     tools:
       - icon: github

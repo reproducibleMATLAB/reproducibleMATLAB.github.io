@@ -1,0 +1,16 @@
+---
+date: last-modified
+date-format: D MMM, YYYY
+---
+
+# Privacy Policy {.unnumbered}
+
+This site collects no user data.
+
+It does use Google analytics to aid in measuring the impact and usage of the materials but does not use cookies to do so.
+
+Measuring usage of `repliMAT` allows us to potentially apply for future funding as well as finding out which sections are most popular, allowing us to use our efforts to the best effect.
+
+Please see the [source code](https://github.com/reproducibleMATLAB/reproducibleMATLAB.github.io/){target='_blank'} to see that anonymity settings are enabled in the quarto config  (`_quarto.yml`) - which is used to generate the site.
+
+Online privacy is important to us. If you have any concerns about privacy when using `repliMAT` - please contact me.
