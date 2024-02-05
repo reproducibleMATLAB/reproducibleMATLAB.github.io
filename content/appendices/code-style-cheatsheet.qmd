@@ -139,27 +139,18 @@ isNew = ismember(v, valueArray);
 ```
 
 + Avoid the conditional expression `if 0`.
-
 + An `if-else` sequence should include the else condition.
-
 + The usual case should be put in the `if`-part and the exception in the `else`-part of an `if-else` statement.
-
 + A `switch` statement should include the `otherwise` condition.
-
 + Use a `switch` sequence if the variable is a string.
-
 + Use a `switch` statement in place of many `if-elseif-else` statements when possible.
 
 ## General
 
 + Avoid cryptic code.  You should be able to look at it a month from now and know what it does.
-
 + Use parentheses for clarity even if not need because of operator precedence.
-
 + Minimize the use of numbers in expressions. Use a named constant instead.
-
 + Always use a zero before the decimal point: `THRESHOLD = 0.5`
-
 + Make floating point comparisons with caution.
 
 # Layout, Comments, and Documentation
@@ -211,7 +202,5 @@ function runEverything
 ## Documentation
 
 + Write header comments with text markup to provide user documentation. Include sections that correspond to a help page: syntax, description, example, and see also. 
-
 + Consider writing the documentation first to better define inputs, outputs and functionality.
-
 + Consider using a source control tool such as SVN or GIT.  If you do not use a source control tool, document changes by adding change history comments after the function header or near the top of the script.
