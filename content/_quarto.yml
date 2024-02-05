@@ -38,6 +38,13 @@ book:
         href: https://reproducibleMATLAB.github.io/blog
         aria-label: Blog
         target: _blank
+  google-analytics: 
+    tracking-id: "G-WMTSZ2TVF9"
+    anonymize-ip: true
+  cookie-consent: 
+    type: express
+    style: headline
+    palette: dark
 
 bibliography: references.bib
 csl: nature.csl
