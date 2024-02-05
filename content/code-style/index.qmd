@@ -16,10 +16,10 @@ We'll explain this in several steps:
 
 One significant reference here is the book "The Elements of MATLAB Style" by Richard Johnson [@Johnson_2010] which acts as the *de facto* community standard for style when it comes to programming in MATLAB. As well as the book itself, there are several resources based on it that have the core elements of its teachings on code style in MATLAB:
 
-+ cheat sheet - [available from MATLAB file exhange](https://uk.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet) - much better than reading the actual book
-+ updates to the book - [also on file exchange](https://uk.mathworks.com/matlabcentral/fileexchange/36540-updates-to-the-elements-of-matlab-style)
++ cheat sheet - [available from MATLAB file exhange](https://uk.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet){target="_blank"} - much better than reading the actual book
++ updates to the book - [also on file exchange](https://uk.mathworks.com/matlabcentral/fileexchange/36540-updates-to-the-elements-of-matlab-style){target="_blank"}
 
-The cheat sheet is also reproduced on this site here for ease of searching and for quick reference.
+The cheat sheet is also reproduced on this site [here](../appendices/code-style-cheatsheet.qmd) for ease of searching and for quick reference.
 
 With any programming language, it pays to disavow yourself of any *opinions* that you may have and save yourself the time of thinking about how to write your code by just following the standard practices of the community.
 Your code may **run** perfectly well. You may think that a certain way of function-naming is slightly better.
