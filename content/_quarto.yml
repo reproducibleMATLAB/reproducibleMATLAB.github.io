@@ -52,9 +52,10 @@ csl: nature.csl
 format:
   html:
     from: markdown+emoji
+    highlight-style: a11y-dark
     theme: 
-      light: flatly
-      dark: darkly
+      light: simplex
+      dark: solar
   pdf:
     documentclass: scrreprt
 
