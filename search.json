@@ -278,5 +278,15 @@
     "crumbs": [
       "License"
     ]
+  },
+  {
+    "objectID": "privacypolicy.html",
+    "href": "privacypolicy.html",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "This site collects no user data.\nIt does use Google analytics to aid in measuring the impact and usage of the materials but does not use cookies to do so.\nMeasuring usage of repliMAT allows us to potentially apply for future funding as well as finding out which sections are most popular, allowing us to use our efforts to the best effect.\nPlease see the source code to see that anonymity settings are enabled in the quarto config (_quarto.yml) - which is used to generate the site.\nOnline privacy is important to us. If you have any concerns about privacy when using repliMAT - please contact me.",
+    "crumbs": [
+      "Privacy Policy"
+    ]
   }
 ]
