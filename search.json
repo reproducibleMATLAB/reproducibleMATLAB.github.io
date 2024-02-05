@@ -102,119 +102,122 @@
   {
     "objectID": "code-style/index.html",
     "href": "code-style/index.html",
-    "title": "Writing cleaner code",
+    "title": "2  Introduction",
     "section": "",
     "text": "Whilst this is primarily a guide to writing more reproducible MATLAB, I would argue that writing cleaner code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.\nWe’ll explain this in several steps:\n\nvariables\nfunctions\ncodebase organisation (it’s not just the programming that helps)\nhow to document your code.\n\nOne significant reference here is the book “The Elements of MATLAB Style” by Richard Johnson1 which acts as the de facto community standard for style when it comes to programming in MATLAB. As well as the book itself, there are several resources based on it that have the core elements of its teachings on code style in MATLAB:\n\ncheat sheet - available from MATLAB file exhange - much better than reading the actual book\nupdates to the book - also on file exchange\n\nThe cheat sheet is also reproduced on this site here for ease of searching and for quick reference.\nWith any programming language, it pays to disavow yourself of any opinions that you may have and save yourself the time of thinking about how to write your code by just following the standard practices of the community. Your code may run perfectly well. You may think that a certain way of function-naming is slightly better. But if we all stick to the same standards, we all have an easier time of reading each other’s code and don’t have to waste time arguing (yes, this is something that people argue about.)\n\n\n\n\n1. Johnson, R. K. The elements of MATLAB style. (Cambridge University Press, 2010).",
     "crumbs": [
-      "Writing cleaner code"
+      "Writing Cleaner Code",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "code-style/variables.html",
     "href": "code-style/variables.html",
-    "title": "2  Variables",
+    "title": "3  Variables",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
-      "Writing cleaner code",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Variables</span>"
+      "Writing Cleaner Code",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Variables</span>"
     ]
   },
   {
     "objectID": "code-style/functions.html",
     "href": "code-style/functions.html",
-    "title": "3  Functions",
+    "title": "4  Functions",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
-      "Writing cleaner code",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Functions</span>"
+      "Writing Cleaner Code",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Functions</span>"
     ]
   },
   {
     "objectID": "code-style/organisation.html",
     "href": "code-style/organisation.html",
-    "title": "4  Project Organisation",
+    "title": "5  Project Organisation",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
-      "Writing cleaner code",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Project Organisation</span>"
+      "Writing Cleaner Code",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Project Organisation</span>"
     ]
   },
   {
     "objectID": "code-style/documentation.html",
     "href": "code-style/documentation.html",
-    "title": "5  Documentation",
+    "title": "6  Documentation",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
-      "Writing cleaner code",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Documentation</span>"
+      "Writing Cleaner Code",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "reproducibility/index.html",
+    "href": "reproducibility/index.html",
+    "title": "7  Introduction",
+    "section": "",
+    "text": "🚧 Nothing here yet! Check back later. 🚧",
+    "crumbs": [
+      "Reproducibility",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "reproducibility/projects.html",
     "href": "reproducibility/projects.html",
-    "title": "6  Projects",
+    "title": "8  Projects",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
       "Reproducibility",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projects</span>"
     ]
   },
   {
     "objectID": "exercises/index.html",
     "href": "exercises/index.html",
-    "title": "Exercises",
+    "title": "9  Introduction",
     "section": "",
-    "text": "Introduction\nIn this series of exercises, we’re going to work with some research code which may be typical of what many of us would write and walk through how to transform this into a significantly more reproducible project.\nWe’ll work with some publicly available data on surface temperatures in the USA from the late 19th to the early 21st century and create some interesting visualisations.\nTo start with, the project will hopefully look similar to what many of us would develop in our work, but it may not be as reproducible as it could be. By the end, we should have a project that we can easily share with anyone who can run it and generate the same results, and even use the code with different data.",
+    "text": "9.1 How to work with these exercises\nYou’ll either need a recent copy of MATLAB installed on your computer, or you can follow the links alongside the exercises to open the examples in MATLAB online.\nTo get hold of the code and use it on your own computer, you can use git to “clone” the code from GitHub, or just download it. Instructions are in the “Getting started” section.",
     "crumbs": [
-      "Exercises"
-    ]
-  },
-  {
-    "objectID": "exercises/index.html#how-to-work-with-these-exercises",
-    "href": "exercises/index.html#how-to-work-with-these-exercises",
-    "title": "Exercises",
-    "section": "How to work with these exercises",
-    "text": "How to work with these exercises\nYou’ll either need a recent copy of MATLAB installed on your computer, or you can follow the links alongside the exercises to open the examples in MATLAB online.\nTo get hold of the code and use it on your own computer, you can use git to “clone” the code from GitHub, or just download it. Instructions are in the “Getting started” section.",
-    "crumbs": [
-      "Exercises"
+      "Exercises",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "exercises/getting-started.html",
     "href": "exercises/getting-started.html",
-    "title": "7  Getting Started",
+    "title": "10  Getting Started",
     "section": "",
-    "text": "7.1 Technical setup\nYou’ll need an installation of MATLAB, preferably a recent version (i.e. in the last year or so). Where a specific version is needed, or doesn’t work with an example, it should be indicated alongside the exercise. See Section 7.1.1 below for more info on versions.\nFollow the instructions on MathWorks.com to install.\nNo specific toolboxes are required.\nNote There is no guarantee that anything in these materials will work with Octave. In fact it probably won’t. But let us know if you try!",
+    "text": "10.1 Technical setup\nYou’ll need an installation of MATLAB, preferably a recent version (i.e. in the last year or so). Where a specific version is needed, or doesn’t work with an example, it should be indicated alongside the exercise. See Section 10.1.1 below for more info on versions.\nFollow the instructions on MathWorks.com to install.\nNo specific toolboxes are required.\nNote There is no guarantee that anything in these materials will work with Octave. In fact it probably won’t. But let us know if you try!",
     "crumbs": [
       "Exercises",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Getting Started</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Getting Started</span>"
     ]
   },
   {
     "objectID": "exercises/getting-started.html#technical-setup",
     "href": "exercises/getting-started.html#technical-setup",
-    "title": "7  Getting Started",
+    "title": "10  Getting Started",
     "section": "",
-    "text": "7.1.1 MATLAB versions\nA new version of MATLAB is released twice a year. The version numbers are comprised of the letter ‘R’ followed by the calendar year and ‘a’ if it’s the first release in the year and ‘b’ for the second. e.g. R2022b. Each version has improvements from the last and makes changes. It’s a good idea to be using the most recent version of MATLAB in most cases.",
+    "text": "10.1.1 MATLAB versions\nA new version of MATLAB is released twice a year. The version numbers are comprised of the letter ‘R’ followed by the calendar year and ‘a’ if it’s the first release in the year and ‘b’ for the second. e.g. R2022b. Each version has improvements from the last and makes changes. It’s a good idea to be using the most recent version of MATLAB in most cases.",
     "crumbs": [
       "Exercises",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Getting Started</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Getting Started</span>"
     ]
   },
   {
     "objectID": "exercises/getting-started.html#how-to-use-these-materials",
     "href": "exercises/getting-started.html#how-to-use-these-materials",
-    "title": "7  Getting Started",
-    "section": "7.2 How to use these materials",
-    "text": "7.2 How to use these materials\n\n7.2.1 Where to start\nAnywhere you like! Hopefully the structure of the exercises included here means that you can dip in to any point that takes your fancy.\n\n\n7.2.2 Prerequisites\nThese materials assume that you’re already familiar with the basics of programming in MATLAB. Variables, arrays, loops, reading in data and making plots etc.",
+    "title": "10  Getting Started",
+    "section": "10.2 How to use these materials",
+    "text": "10.2 How to use these materials\n\n10.2.1 Where to start\nAnywhere you like! Hopefully the structure of the exercises included here means that you can dip in to any point that takes your fancy.\n\n\n10.2.2 Prerequisites\nThese materials assume that you’re already familiar with the basics of programming in MATLAB. Variables, arrays, loops, reading in data and making plots etc.",
     "crumbs": [
       "Exercises",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Getting Started</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Getting Started</span>"
     ]
   },
   {
@@ -230,23 +233,23 @@
   {
     "objectID": "extra-credit/testing.html",
     "href": "extra-credit/testing.html",
-    "title": "8  Testing",
+    "title": "11  Testing",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
       "Extra Credit",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Testing</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Testing</span>"
     ]
   },
   {
     "objectID": "extra-credit/version-control.html",
     "href": "extra-credit/version-control.html",
-    "title": "9  Version Control",
+    "title": "12  Version Control",
     "section": "",
     "text": "🚧 Nothing here yet! Check back later. 🚧",
     "crumbs": [
       "Extra Credit",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Version Control</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Version Control</span>"
     ]
   },
   {
