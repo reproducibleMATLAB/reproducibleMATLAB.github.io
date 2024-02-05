@@ -104,7 +104,7 @@
     "href": "code-style/index.html",
     "title": "Writing cleaner code",
     "section": "",
-    "text": "Whilst this is primarily a guide to writing more reproducible MATLAB, I would argue that writing cleaner code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.",
+    "text": "Whilst this is primarily a guide to writing more reproducible MATLAB, I would argue that writing cleaner code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.\nWe’ll explain this in several steps: + variables + functions + codebase organisation (it’s not just the programming that helps) + how to document your code.\nOne significant reference here is the book “The Elements of MATLAB Style” by Richard Johnson1 which acts as the de facto community standard for style when it comes to programming in MATLAB. As well as the book itself, there are several resources based on it that have the core elements of its teachings on code style in MATLAB:\n\ncheat sheet - available from MATLAB file exhange - much better than reading the actual book\nupdates to the book - also on file exchange\n\nThe cheat sheet is also reproduced on this site here for ease of searching and for quick reference.\nWith any programming language, it pays to disavow yourself of any opinions that you may have and save yourself the time of thinking about how to write your code by just following the standard practices of the community. Your code may run perfectly well. You may think that a certain way of function-naming is slightly better. But if we all stick to the same standards, we all have an easier time of reading each other’s code and don’t have to waste time arguing (yes, this is something that people argue about.)\n\n\n\n\n1. Johnson, R. K. The elements of MATLAB style. (Cambridge University Press, 2010).",
     "crumbs": [
       "Writing cleaner code"
     ]
@@ -250,11 +250,181 @@
     ]
   },
   {
+    "objectID": "appendices/code-style-cheatsheet.html",
+    "href": "appendices/code-style-cheatsheet.html",
+    "title": "Code Style Cheat Sheet",
+    "section": "",
+    "text": "Naming Conventions",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#variables",
+    "href": "appendices/code-style-cheatsheet.html#variables",
+    "title": "Code Style Cheat Sheet",
+    "section": "Variables",
+    "text": "Variables\n\nVariable names should be mixed case starting with lower case: velocity, angularAcceleration.\nVariables with a large scope should have meaningful names. Variables with a small scope can have short names:\n\nSmall scope: x, y, z\nLarge scope: velocity, acceleration\n\nThe prefix n should be used for variables representing the number of objects: nFiles, nCars, nLines\nUse a convention on pluralization consistently: point, pointArray\nVariables representing a single entity number can be suffixed by No: tableNo, employeeNo\nIterator variables should be named or prefixed with i, j, k etc. e.g. iFiles, jColumns\nFor nested loops, the iterator should be alphabetical order and helpful names e.g.\n\nfor iFiles = 1:nFiles\n    for jPositions = 1:nPositions\n        ...\n    end\nend\n\nAvoid negated boolean variable names: isNotFound instead use isFound\nAcronyms, even if normally uppercase, should be mixed or lower case. Use: html, isUsaSpecific\nAvoid using a keyword or special value name. Just don’t do it.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#constants",
+    "href": "appendices/code-style-cheatsheet.html#constants",
+    "title": "Code Style Cheat Sheet",
+    "section": "Constants",
+    "text": "Constants\n\nNamed constants should be all uppercase using underscore to separate words: MAX_ITERATIONS, COLOR_RED\nConstants can be prefixed by a common type name: COLOR_RED, COLOR_GREEN, COLOR_BLUE",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#structures",
+    "href": "appendices/code-style-cheatsheet.html#structures",
+    "title": "Code Style Cheat Sheet",
+    "section": "Structures",
+    "text": "Structures\n\nStructure names should be mixed case and begin with a capital letter: Car, DumpTruck\nDo not include the name of the structure in the field name. Use Segment.length. Avoid Segment.segmentLength",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#functions",
+    "href": "appendices/code-style-cheatsheet.html#functions",
+    "title": "Code Style Cheat Sheet",
+    "section": "Functions",
+    "text": "Functions\n\nThe names of functions should document their use.\nNames of functions should be written in lower or mixed case: width(), computeTotalWidth()\nFunctions should have meaningful names. Use computeTotalWidth. Avoid compwid.\nFunctions with single output can be named for the output: shearStress(), standardError()\nFunctions with no output argument or which only return a handle should be named after what they do: plotfft()\nReserve the prefix get/set for accessing an object or property: getobj(), setappdata()\nReserve the prefix compute for methods where something is computed: computeSumOfResiduals(), computeSpread()\nReserve the prefix find for methods where something is looked up: findOldestRecord()\nReserve the prefix initialize for instantiating an object or concept: initializeProblemState()\nReserve the prefix is for boolean functions: isCrazy, isNuts, isOffHisRocker\nUse complement names for complement operations: get/set, add/remove, create/destroy, start/stop, insert/delete, increment/decrement, old/new, begin/end, first/last, up/down, min/max, next/previous, open/close, show/hide, suspend/resume, etc.\nAvoid unintentional shadowing of function names. Use the which -all or exist tools to check for shadowing.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#general",
+    "href": "appendices/code-style-cheatsheet.html#general",
+    "title": "Code Style Cheat Sheet",
+    "section": "General",
+    "text": "General\n\nAbbreviations in names should be avoided. Use computeArrivalTime. Avoid comparr.\nConsider making names pronounceable.\nAll names should be written in English.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#m-files",
+    "href": "appendices/code-style-cheatsheet.html#m-files",
+    "title": "Code Style Cheat Sheet",
+    "section": "M-Files",
+    "text": "M-Files\n\nModularize code. Use small well designed pieces to make the whole.\nWrite functions that are easy to test.\nMake interaction clear. Use inputs and outputs rather than global variables.\nReplace long lists of arguments with structures.\nPartitioning. All sub-functions and most functions should do one thing very well.\nUse existing functions rather than custom coded functions when possible.\nMove blocks of code used in multiple m-files to functions.\nUse sub-functions when a function is only called by one other function.\nWrite test scripts for every function.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#inputoutput",
+    "href": "appendices/code-style-cheatsheet.html#inputoutput",
+    "title": "Code Style Cheat Sheet",
+    "section": "Input/Output",
+    "text": "Input/Output\n\nMake input and output modules for large functions.\nFormat output for easy use. For humans, make it human readable. For machines, make it parsable.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#variables-and-constants",
+    "href": "appendices/code-style-cheatsheet.html#variables-and-constants",
+    "title": "Code Style Cheat Sheet",
+    "section": "Variables and constants",
+    "text": "Variables and constants\n\nVariables should not be reused unless required by memory limitations.\nRelated variables of the same type can be declared in a common statement. Unrelated variables should not be declared in the same statement:\n\npersistent x, y, z\n\nDocument important variables in comments near the start of the file.\nDocument constants with end of line comments:\n\nTHRESHOLD = 10; % Max noise level",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#global-variables",
+    "href": "appendices/code-style-cheatsheet.html#global-variables",
+    "title": "Code Style Cheat Sheet",
+    "section": "Global Variables",
+    "text": "Global Variables\n\nMinimize use of global variables and constants.\nConsider using a function instead of a global constant.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#loops",
+    "href": "appendices/code-style-cheatsheet.html#loops",
+    "title": "Code Style Cheat Sheet",
+    "section": "Loops",
+    "text": "Loops\n\nVariables used in loops should be initialized immediately before the loop.\n\nresult = zeros(nDays,1);\nfor iDay = 1:nDays\n    result(iDay)= foo(iDay);\nend\n\nMinimize the use of break and continue in loops.\nThe end lines in nested loops can have comments to clarify the code block.\n\nfor index=1:2\n    if index==1\n        dosomething(index);\n        ...\n    end % End if\nend % End for",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#conditionals",
+    "href": "appendices/code-style-cheatsheet.html#conditionals",
+    "title": "Code Style Cheat Sheet",
+    "section": "Conditionals",
+    "text": "Conditionals\n\nAvoid complicated conditional expressions. Use temporary logical variables instead.\n\nisValid = (v &gt;= lowerLimit) & (v &lt;= upperLimit);\nisNew = ismember(v, valueArray);\n\nAvoid the conditional expression if 0.\nAn if-else sequence should include the else condition.\nThe usual case should be put in the if-part and the exception in the else-part of an if-else statement.\nA switch statement should include the otherwise condition.\nUse a switch sequence if the variable is a string.\nUse a switch statement in place of many if-elseif-else statements when possible.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#general-1",
+    "href": "appendices/code-style-cheatsheet.html#general-1",
+    "title": "Code Style Cheat Sheet",
+    "section": "General",
+    "text": "General\n\nAvoid cryptic code. You should be able to look at it a month from now and know what it does.\nUse parentheses for clarity even if not need because of operator precedence.\nMinimize the use of numbers in expressions. Use a named constant instead.\nAlways use a zero before the decimal point: THRESHOLD = 0.5\nMake floating point comparisons with caution.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#layout",
+    "href": "appendices/code-style-cheatsheet.html#layout",
+    "title": "Code Style Cheat Sheet",
+    "section": "Layout",
+    "text": "Layout\n\nContents should be kept within the first 80 columns.\nLines should be split after commas, spaces, and operators.\nAlign a continued line with the beginning of the expression on the previous line:\n\ntotalSum = a + b + c ...\n    d + e;\n\nBasic indentation should be 4 spaces.\nIn general, a line of code should contain only one executable statement.\nShort single statement if, for, or while statements can be written on one line:\n\nif(condition), statement; end",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#white-space",
+    "href": "appendices/code-style-cheatsheet.html#white-space",
+    "title": "Code Style Cheat Sheet",
+    "section": "White Space",
+    "text": "White Space\n\nSurround =, &, and | by spaces.\nFollow commas by a space.\nKeywords should be followed by a space.\nBlocks of code should be separated by three blank lines or a section break.\nUse code alignment wherever it enhances readability.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#comments",
+    "href": "appendices/code-style-cheatsheet.html#comments",
+    "title": "Code Style Cheat Sheet",
+    "section": "Comments",
+    "text": "Comments\n\nComments cannot justify poorly written code.\nComments should agree with the code but not restate the code.\nComments should have the same indentation as the statement(s) referenced.\nTraditional function header comments should support help and lookfor:\n\nhelp prints the first continuous block of comments.\nlookfor searches the 1st comment line of all m-files on the path.\n\nFunction headers should discuss any special requirements for the input/output argument and describe any side effects of the function.\nWrite the function name using correct case in the function header comments.\n\nfunction runEverything\n% runEverything runs all mfiles in its folder\n\nPut any copyright lines and change history after the function header with a blank line in between.\nAll comments should be in English.",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "appendices/code-style-cheatsheet.html#documentation",
+    "href": "appendices/code-style-cheatsheet.html#documentation",
+    "title": "Code Style Cheat Sheet",
+    "section": "Documentation",
+    "text": "Documentation\n\nWrite header comments with text markup to provide user documentation. Include sections that correspond to a help page: syntax, description, example, and see also.\nConsider writing the documentation first to better define inputs, outputs and functionality.\nConsider using a source control tool such as SVN or GIT. If you do not use a source control tool, document changes by adding change history comments after the function header or near the top of the script.\n\n\n\n\n\n1. Johnson, R. K. The elements of MATLAB style. (Cambridge University Press, 2010).",
+    "crumbs": [
+      "Code Style Cheat Sheet"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "1. The\nTuring Way Community. The Turing Way: A handbook\nfor reproducible, ethical and collaborative research. (2022)\ndoi:10.5281/zenodo.3233853.",
+    "text": "1. The\nTuring Way Community. The Turing Way: A handbook\nfor reproducible, ethical and collaborative research. (2022)\ndoi:10.5281/zenodo.3233853.\n\n\n2. Johnson, R. K. The elements of MATLAB\nstyle. (Cambridge University Press, 2010).",
     "crumbs": [
       "References"
     ]

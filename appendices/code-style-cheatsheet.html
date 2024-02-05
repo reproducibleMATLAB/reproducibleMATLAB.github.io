@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>repliMAT: A Guide to Reproducible MATLAB - 3&nbsp; Functions</title>
+<title>repliMAT: A Guide to Reproducible MATLAB - Code Style Cheat Sheet</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +84,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../code-style/organisation.html" rel="next">
-<link href="../code-style/variables.html" rel="prev">
+<link href="../references.html" rel="next">
+<link href="../extra-credit/version-control.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -97,7 +151,7 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../code-style/index.html">Writing cleaner code</a></li><li class="breadcrumb-item"><a href="../code-style/functions.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Functions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/code-style-cheatsheet.html">Code Style Cheat Sheet</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -156,7 +210,7 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../code-style/functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../code-style/functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Functions</span></span></a>
   </div>
 </li>
@@ -233,7 +287,7 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/code-style-cheatsheet.html" class="sidebar-item-text sidebar-link">
+  <a href="../appendices/code-style-cheatsheet.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Code Style Cheat Sheet</span></a>
   </div>
 </li>
@@ -261,14 +315,47 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#naming-conventions" id="toc-naming-conventions" class="nav-link active" data-scroll-target="#naming-conventions">Naming Conventions</a>
+  <ul class="collapse">
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  <li><a href="#constants" id="toc-constants" class="nav-link" data-scroll-target="#constants">Constants</a></li>
+  <li><a href="#structures" id="toc-structures" class="nav-link" data-scroll-target="#structures">Structures</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general">General</a></li>
+  </ul></li>
+  <li><a href="#files-and-organization" id="toc-files-and-organization" class="nav-link" data-scroll-target="#files-and-organization">Files and Organization</a>
+  <ul class="collapse">
+  <li><a href="#m-files" id="toc-m-files" class="nav-link" data-scroll-target="#m-files">M-Files</a></li>
+  <li><a href="#inputoutput" id="toc-inputoutput" class="nav-link" data-scroll-target="#inputoutput">Input/Output</a></li>
+  </ul></li>
+  <li><a href="#statements" id="toc-statements" class="nav-link" data-scroll-target="#statements">Statements</a>
+  <ul class="collapse">
+  <li><a href="#variables-and-constants" id="toc-variables-and-constants" class="nav-link" data-scroll-target="#variables-and-constants">Variables and constants</a></li>
+  <li><a href="#global-variables" id="toc-global-variables" class="nav-link" data-scroll-target="#global-variables">Global Variables</a></li>
+  <li><a href="#loops" id="toc-loops" class="nav-link" data-scroll-target="#loops">Loops</a></li>
+  <li><a href="#conditionals" id="toc-conditionals" class="nav-link" data-scroll-target="#conditionals">Conditionals</a></li>
+  <li><a href="#general-1" id="toc-general-1" class="nav-link" data-scroll-target="#general-1">General</a></li>
+  </ul></li>
+  <li><a href="#layout-comments-and-documentation" id="toc-layout-comments-and-documentation" class="nav-link" data-scroll-target="#layout-comments-and-documentation">Layout, Comments, and Documentation</a>
+  <ul class="collapse">
+  <li><a href="#layout" id="toc-layout" class="nav-link" data-scroll-target="#layout">Layout</a></li>
+  <li><a href="#white-space" id="toc-white-space" class="nav-link" data-scroll-target="#white-space">White Space</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../code-style/index.html">Writing cleaner code</a></li><li class="breadcrumb-item"><a href="../code-style/functions.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Functions</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Functions</span></h1>
+<h1 class="title">Code Style Cheat Sheet</h1>
 </div>
 
 
@@ -291,9 +378,235 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 </header>
 
 
-<p><span class="emoji" data-emoji="construction">🚧</span> <em>Nothing here yet! Check back later.</em> <span class="emoji" data-emoji="construction">🚧</span></p>
+<p>This is a reproduction of the MATLAB Style Guidelines Cheat Sheet compiled by Jason Nicholson and Edited by Richard Johnson from the book <em>The Elements of MATLAB Style</em><span class="citation" data-cites="Johnson_2010"><sup><a href="../references.html#ref-Johnson_2010" role="doc-biblioref">1</a></sup></span>.</p>
+<p>Matlab Style Guidelines Cheat Sheet (<a href="https://www.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet" class="uri">https://www.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet</a>), MATLAB Central File Exchange. Retrieved February 5, 2024.</p>
+<p>Reproduced here within this book for ease of use by its readers.</p>
+<section id="naming-conventions" class="level1">
+<h1>Naming Conventions</h1>
+<section id="variables" class="level2">
+<h2 class="anchored" data-anchor-id="variables">Variables</h2>
+<ul>
+<li>Variable names should be mixed case starting with lower case: <code>velocity</code>, <code>angularAcceleration</code>.</li>
+<li>Variables with a large scope should have meaningful names. Variables with a small scope can have short names:
+<ul>
+<li>Small scope: <code>x</code>, <code>y</code>, <code>z</code></li>
+<li>Large scope: <code>velocity</code>, <code>acceleration</code></li>
+</ul></li>
+<li>The prefix <code>n</code> should be used for variables representing the number of objects: <code>nFiles</code>, <code>nCars</code>, <code>nLines</code></li>
+<li>Use a convention on pluralization consistently: <code>point</code>, <code>pointArray</code></li>
+<li>Variables representing a single entity number can be suffixed by <code>No</code>: <code>tableNo</code>, <code>employeeNo</code></li>
+<li>Iterator variables should be named or prefixed with <code>i</code>, <code>j</code>, <code>k</code> etc. e.g.&nbsp;<code>iFiles</code>, <code>jColumns</code></li>
+<li>For nested loops, the iterator should be alphabetical order and helpful names e.g.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="va">iFiles</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="va">nFiles</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> <span class="va">jPositions</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="va">nPositions</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="op">...</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Avoid negated boolean variable names: <del><code>isNotFound</code></del> instead use <code>isFound</code></li>
+<li>Acronyms, even if normally uppercase, should be mixed or lower case. Use: <code>html</code>, <code>isUsaSpecific</code></li>
+<li>Avoid using a keyword or special value name. Just don’t do it.</li>
+</ul>
+</section>
+<section id="constants" class="level2">
+<h2 class="anchored" data-anchor-id="constants">Constants</h2>
+<ul>
+<li>Named constants should be all uppercase using underscore to separate words: <code>MAX_ITERATIONS</code>, <code>COLOR_RED</code></li>
+<li>Constants can be prefixed by a common type name: <code>COLOR_RED</code>, <code>COLOR_GREEN</code>, <code>COLOR_BLUE</code></li>
+</ul>
+</section>
+<section id="structures" class="level2">
+<h2 class="anchored" data-anchor-id="structures">Structures</h2>
+<ul>
+<li>Structure names should be mixed case and begin with a capital letter: <code>Car</code>, <code>DumpTruck</code></li>
+<li>Do not include the name of the structure in the field name. Use <code>Segment.length</code>. Avoid <code>Segment.segmentLength</code></li>
+</ul>
+</section>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<ul>
+<li>The names of functions should document their use.</li>
+<li>Names of functions should be written in lower or mixed case: <code>width()</code>, <code>computeTotalWidth()</code></li>
+<li>Functions should have meaningful names. Use <code>computeTotalWidth</code>. Avoid <code>compwid</code>.</li>
+<li>Functions with single output can be named for the output: <code>shearStress()</code>, <code>standardError()</code></li>
+<li>Functions with no output argument or which only return a handle should be named after what they do: <code>plotfft()</code></li>
+<li>Reserve the prefix <code>get</code>/<code>set</code> for accessing an object or property: <code>getobj()</code>, <code>setappdata()</code></li>
+<li>Reserve the prefix <code>compute</code> for methods where something is computed: <code>computeSumOfResiduals()</code>, <code>computeSpread()</code></li>
+<li>Reserve the prefix <code>find</code> for methods where something is looked up: <code>findOldestRecord()</code></li>
+<li>Reserve the prefix <code>initialize</code> for instantiating an object or concept: <code>initializeProblemState()</code></li>
+<li>Reserve the prefix <code>is</code> for boolean functions: <code>isCrazy</code>, <code>isNuts</code>, <code>isOffHisRocker</code></li>
+<li>Use complement names for complement operations: <code>get</code>/<code>set</code>, <code>add</code>/<code>remove</code>, <code>create</code>/<code>destroy</code>, <code>start</code>/<code>stop</code>, <code>insert</code>/<code>delete</code>, <code>increment</code>/<code>decrement</code>, <code>old</code>/<code>new</code>, <code>begin</code>/<code>end</code>, <code>first</code>/<code>last</code>, <code>up</code>/<code>down</code>, <code>min</code>/<code>max</code>, <code>next</code>/<code>previous</code>, <code>open</code>/<code>close</code>, <code>show</code>/<code>hide</code>, <code>suspend</code>/<code>resume</code>, <em>etc</em>.</li>
+<li>Avoid unintentional shadowing of function names. Use the <code>which -all</code> or <code>exist</code> tools to check for shadowing.</li>
+</ul>
+</section>
+<section id="general" class="level2">
+<h2 class="anchored" data-anchor-id="general">General</h2>
+<ul>
+<li>Abbreviations in names should be avoided. Use <code>computeArrivalTime</code>. Avoid <code>comparr</code>.</li>
+<li>Consider making names pronounceable.</li>
+<li>All names should be written in English.</li>
+</ul>
+</section>
+</section>
+<section id="files-and-organization" class="level1">
+<h1>Files and Organization</h1>
+<section id="m-files" class="level2">
+<h2 class="anchored" data-anchor-id="m-files">M-Files</h2>
+<ul>
+<li>Modularize code. Use small well designed pieces to make the whole.</li>
+<li>Write functions that are easy to test.</li>
+<li>Make interaction clear. Use inputs and outputs rather than global variables.</li>
+<li>Replace long lists of arguments with structures.</li>
+<li>Partitioning. All sub-functions and most functions should do one thing very well.</li>
+<li>Use existing functions rather than custom coded functions when possible.</li>
+<li>Move blocks of code used in multiple m-files to functions.</li>
+<li>Use sub-functions when a function is only called by one other function.</li>
+<li>Write test scripts for every function.</li>
+</ul>
+</section>
+<section id="inputoutput" class="level2">
+<h2 class="anchored" data-anchor-id="inputoutput">Input/Output</h2>
+<ul>
+<li>Make input and output modules for large functions.</li>
+<li>Format output for easy use. For humans, make it human readable. For machines, make it parsable.</li>
+</ul>
+</section>
+</section>
+<section id="statements" class="level1">
+<h1>Statements</h1>
+<section id="variables-and-constants" class="level2">
+<h2 class="anchored" data-anchor-id="variables-and-constants">Variables and constants</h2>
+<ul>
+<li>Variables should not be reused unless required by memory limitations.</li>
+<li>Related variables of the same type can be declared in a common statement. Unrelated variables should not be declared in the same statement:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">persistent</span> <span class="va">x</span><span class="op">,</span> <span class="va">y</span><span class="op">,</span> <span class="va">z</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Document important variables in comments near the start of the file.</li>
+<li>Document constants with end of line comments:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="va">THRESHOLD</span> <span class="op">=</span> <span class="fl">10</span><span class="op">;</span> <span class="co">% Max noise level</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="global-variables" class="level2">
+<h2 class="anchored" data-anchor-id="global-variables">Global Variables</h2>
+<ul>
+<li>Minimize use of global variables and constants.</li>
+<li>Consider using a function instead of a global constant.</li>
+</ul>
+</section>
+<section id="loops" class="level2">
+<h2 class="anchored" data-anchor-id="loops">Loops</h2>
+<ul>
+<li>Variables used in loops should be initialized immediately before the loop.</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">result</span> <span class="op">=</span> <span class="va">zeros</span>(<span class="va">nDays</span><span class="op">,</span><span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="va">iDay</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="va">nDays</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">result</span>(<span class="va">iDay</span>)<span class="op">=</span> <span class="va">foo</span>(<span class="va">iDay</span>)<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Minimize the use of <code>break</code> and <code>continue</code> in loops.</li>
+<li>The end lines in nested loops can have comments to clarify the code block.</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="va">index</span><span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> <span class="va">index</span><span class="op">==</span><span class="fl">1</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">dosomething</span>(<span class="va">index</span>)<span class="op">;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="op">...</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span> <span class="co">% End if</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span> <span class="co">% End for</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="conditionals" class="level2">
+<h2 class="anchored" data-anchor-id="conditionals">Conditionals</h2>
+<ul>
+<li>Avoid complicated conditional expressions. Use temporary logical variables instead.</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">isValid</span> <span class="op">=</span> (<span class="va">v</span> <span class="op">&gt;=</span> <span class="va">lowerLimit</span>) <span class="op">&amp;</span> (<span class="va">v</span> <span class="op">&lt;=</span> <span class="va">upperLimit</span>)<span class="op">;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">isNew</span> <span class="op">=</span> <span class="va">ismember</span>(<span class="va">v</span><span class="op">,</span> <span class="va">valueArray</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Avoid the conditional expression <code>if 0</code>.</p></li>
+<li><p>An <code>if-else</code> sequence should include the else condition.</p></li>
+<li><p>The usual case should be put in the <code>if</code>-part and the exception in the <code>else</code>-part of an <code>if-else</code> statement.</p></li>
+<li><p>A <code>switch</code> statement should include the <code>otherwise</code> condition.</p></li>
+<li><p>Use a <code>switch</code> sequence if the variable is a string.</p></li>
+<li><p>Use a <code>switch</code> statement in place of many <code>if-elseif-else</code> statements when possible.</p></li>
+</ul>
+</section>
+<section id="general-1" class="level2">
+<h2 class="anchored" data-anchor-id="general-1">General</h2>
+<ul>
+<li><p>Avoid cryptic code. You should be able to look at it a month from now and know what it does.</p></li>
+<li><p>Use parentheses for clarity even if not need because of operator precedence.</p></li>
+<li><p>Minimize the use of numbers in expressions. Use a named constant instead.</p></li>
+<li><p>Always use a zero before the decimal point: <code>THRESHOLD = 0.5</code></p></li>
+<li><p>Make floating point comparisons with caution.</p></li>
+</ul>
+</section>
+</section>
+<section id="layout-comments-and-documentation" class="level1">
+<h1>Layout, Comments, and Documentation</h1>
+<section id="layout" class="level2">
+<h2 class="anchored" data-anchor-id="layout">Layout</h2>
+<ul>
+<li>Contents should be kept within the first 80 columns.</li>
+<li>Lines should be split after commas, spaces, and operators.</li>
+<li>Align a continued line with the beginning of the expression on the previous line:</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="va">totalSum</span> <span class="op">=</span> <span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">+</span> <span class="va">c</span> <span class="op">...</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">d</span> <span class="op">+</span> <span class="va">e</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Basic indentation should be 4 spaces.</li>
+<li>In general, a line of code should contain only one executable statement.</li>
+<li>Short single statement <code>if</code>, <code>for</code>, or <code>while</code> statements can be written on one line:</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">if</span>(<span class="va">condition</span>)<span class="op">,</span> <span class="va">statement</span><span class="op">;</span> <span class="kw">end</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="white-space" class="level2">
+<h2 class="anchored" data-anchor-id="white-space">White Space</h2>
+<ul>
+<li>Surround <code>=</code>, <code>&amp;</code>, and <code>|</code> by spaces.</li>
+<li>Follow commas by a space.</li>
+<li>Keywords should be followed by a space.</li>
+<li>Blocks of code should be separated by three blank lines or a section break.</li>
+<li>Use code alignment wherever it enhances readability.</li>
+</ul>
+</section>
+<section id="comments" class="level2">
+<h2 class="anchored" data-anchor-id="comments">Comments</h2>
+<ul>
+<li>Comments cannot justify poorly written code.</li>
+<li>Comments should agree with the code but not restate the code.</li>
+<li>Comments should have the same indentation as the statement(s) referenced.</li>
+<li>Traditional function header comments should support <code>help</code> and <code>lookfor</code>:
+<ul>
+<li><code>help</code> prints the first continuous block of comments.</li>
+<li><code>lookfor</code> searches the 1<sup>st</sup> comment line of all m-files on the path.</li>
+</ul></li>
+<li>Function headers should discuss any special requirements for the input/output argument and describe any side effects of the function.</li>
+<li>Write the function name using correct case in the function header comments.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="va">runEverything</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">% runEverything runs all mfiles in its folder</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Put any copyright lines and change history after the function header with a blank line in between.</li>
+<li>All comments should be in English.</li>
+</ul>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<ul>
+<li><p>Write header comments with text markup to provide user documentation. Include sections that correspond to a help page: syntax, description, example, and see also.</p></li>
+<li><p>Consider writing the documentation first to better define inputs, outputs and functionality.</p></li>
+<li><p>Consider using a source control tool such as SVN or GIT. If you do not use a source control tool, document changes by adding change history comments after the function header or near the top of the script.</p></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Johnson_2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Johnson, R. K. <em>The elements of MATLAB style</em>. (Cambridge University Press, 2010).</div>
+</div>
+</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -829,13 +1142,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../code-style/variables.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Variables</span></span>
+      <a href="../extra-credit/version-control.html" class="pagination-link  aria-label=" &lt;span="" control&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Version Control</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../code-style/organisation.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Project Organisation</span>">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Project Organisation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -233,6 +253,12 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../appendices/code-style-cheatsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code Style Cheat Sheet</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -286,8 +312,21 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 
 
 <p>Whilst this is primarily a guide to writing more <em>reproducible</em> MATLAB, I would argue that writing <em>cleaner</em> code is an important step. It can make your code easier to read and follow (for you as well as others) - making it simpler to spot errors and mistakes, as well as for others to make contributions and improve or build upon your code.</p>
+<p>We’ll explain this in several steps: + variables + functions + codebase organisation (it’s not just the programming that helps) + how to document your code.</p>
+<p>One significant reference here is the book “The Elements of MATLAB Style” by Richard Johnson<span class="citation" data-cites="Johnson_2010"><sup><a href="../references.html#ref-Johnson_2010" role="doc-biblioref">1</a></sup></span> which acts as the <em>de facto</em> community standard for style when it comes to programming in MATLAB. As well as the book itself, there are several resources based on it that have the core elements of its teachings on code style in MATLAB:</p>
+<ul>
+<li>cheat sheet - <a href="https://uk.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet">available from MATLAB file exhange</a> - much better than reading the actual book</li>
+<li>updates to the book - <a href="https://uk.mathworks.com/matlabcentral/fileexchange/36540-updates-to-the-elements-of-matlab-style">also on file exchange</a></li>
+</ul>
+<p>The cheat sheet is also reproduced on this site here for ease of searching and for quick reference.</p>
+<p>With any programming language, it pays to disavow yourself of any <em>opinions</em> that you may have and save yourself the time of thinking about how to write your code by just following the standard practices of the community. Your code may <strong>run</strong> perfectly well. You may think that a certain way of function-naming is slightly better. But if we all stick to the same standards, we all have an easier time of reading each other’s code and don’t have to waste time arguing (yes, this is something that people argue about.)</p>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Johnson_2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Johnson, R. K. <em>The elements of MATLAB style</em>. (Cambridge University Press, 2010).</div>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
