@@ -13,6 +13,7 @@ book:
     - part: "Writing Cleaner Code"
       chapters: 
         - code-style/index.qmd
+        - code-style/comments.qmd
         - code-style/variables.qmd
         - code-style/functions.qmd
         - code-style/organisation.qmd
