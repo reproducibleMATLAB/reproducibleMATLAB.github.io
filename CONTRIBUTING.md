@@ -5,7 +5,7 @@ The project's source code and development is managed at its [GitHub repository][
 In all interactions, please abide by the [code of conduct](../CODE_OF_CONDUCT.md)
 
 ## Issues
-[Open a new issue](https://github.com/davidwilby/repliMAT/issues/new) to describe a bug, error or to request changes.
+[Open a new issue](https://github.com/reproducibleMATLAB/reproducibleMATLAB.github.io/issues/new) to describe a bug, error or to request changes.
 
 ## Contributing code
 If contributing source code changes to the project please follow the following workflow:
@@ -19,4 +19,4 @@ If contributing source code changes to the project please follow the following w
 1. Someone will review your pull request and hopefully it will be merged! :tada:
 
 
-[repo]: https://github.com/davidwilby/repliMAT
+[repo]: https://github.com/reproducibleMATLAB/reproducibleMATLAB.github.io
