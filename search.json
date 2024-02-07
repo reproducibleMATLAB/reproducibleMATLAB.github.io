@@ -126,7 +126,7 @@
     "href": "code-style/comments.html#for-code-readability",
     "title": "3  Comments",
     "section": "",
-    "text": "% Comments are lines of code that do not get executed.\n% In MATLAB, comment lines begin with a percent (%) symbol.\na = 42; % They can occur on the same line as executable code.\n% Everything after the % is a comment.\n\n\ndisp(a)\n\n\n%{\nMultiple lines of\ncode can be\ncommented out\nas a block.\nUsing curly braces.\n%}\n\n\n% Comments can also be used to stop lines of code from executing.\n% b = 84;\n\n\nCtrl+R and Ctrl+Shift+R on Windows\nCmd+/ and Cmd+Shift+/ on MacOS\nCtrl+/ and Ctrl+Shift+/ on Linux",
+    "text": "% Comments are lines of code that do not get executed.\n% In MATLAB, comment lines begin with a percent (%) symbol.\na = 42; % They can occur on the same line as executable code.\n% Everything after the % is a comment.\n\n\ndisp(a)\n\n\n%{\nMultiple lines of\ncode can be\ncommented out\nas a block.\nUsing curly braces.\n%}\n\n\n% Comments can also be used to stop lines of code from executing.\n% b = 84;\n\n\nCtrl+R and Ctrl+Shift+R on Windows\nCmd ⌘+/ and Cmd ⌘+Shift+/ on MacOS\nCtrl+/ and Ctrl+Shift+/ on Linux",
     "crumbs": [
       "Writing Cleaner Code",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Comments</span>"
