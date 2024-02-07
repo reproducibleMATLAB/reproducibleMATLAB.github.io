@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -308,7 +342,15 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#for-code-readability" id="toc-for-code-readability" class="nav-link active" data-scroll-target="#for-code-readability"><span class="header-section-number">3.1</span> For code readability</a></li>
+  <li><a href="#commenting-out-code" id="toc-commenting-out-code" class="nav-link" data-scroll-target="#commenting-out-code"><span class="header-section-number">3.2</span> Commenting out code</a></li>
+  <li><a href="#comments-for-controlling-execution---dont-do-it" id="toc-comments-for-controlling-execution---dont-do-it" class="nav-link" data-scroll-target="#comments-for-controlling-execution---dont-do-it"><span class="header-section-number">3.3</span> Comments for controlling execution - don’t do it!</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -326,7 +368,7 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">6 Feb, 2024</p>
+      <p class="date">7 Feb, 2024</p>
     </div>
   </div>
   
@@ -338,9 +380,53 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 </header>
 
 
-<p><span class="emoji" data-emoji="construction">🚧</span> <em>Nothing here yet! Check back later.</em> <span class="emoji" data-emoji="construction">🚧</span></p>
+<section id="for-code-readability" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="for-code-readability"><span class="header-section-number">3.1</span> For code readability</h2>
+<p>One element of reproducible, or more specifically, sustainable code is its <em>readability</em>. In an ideal world, all code would be implicitly readable: its variable, function and class names would all explain themselves and a reader would immediately understand the authour’s intent (always remember that more often than not, reader and authour are the same person!). However, in reality, it’s often necessary to clarify the intent of some particular logic in line with the code, and this is where comments come in handy.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">% Comments are lines of code that do not get executed.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">% In MATLAB, comment lines begin with a percent (%) symbol.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">a</span> <span class="op">=</span> <span class="fl">42</span><span class="op">;</span> <span class="co">% They can occur on the same line as executable code.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">% Everything after the % is a comment.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="va">disp</span>(<span class="va">a</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">%{</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="va">Multiple</span> <span class="va">lines</span> <span class="va">of</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="va">code</span> <span class="va">can</span> <span class="va">be</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="va">commented</span> <span class="va">out</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="va">as</span> <span class="va">a</span> <span class="va">block</span>.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="va">Using</span> <span class="va">curly</span> <span class="va">braces</span>.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">%}</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">% Comments can also be used to stop lines of code from executing.</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">% b = 84;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To make this quick and easy, in the MATLAB editor you can use the following key combinations to <strong>add</strong> or <strong>remove</strong> comments, respectively:</p>
+<ul>
+<li><p><kbd>Ctrl</kbd>+<kbd>R</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> on Windows</p></li>
+<li><p><kbd>Cmd</kbd>+<kbd>/</kbd> and <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> on MacOS</p></li>
+<li><p><kbd>Ctrl</kbd>+<kbd>/</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> on Linux</p></li>
+</ul>
+<p>Comments are one element of good coding practice that I find most developers (that’s people who write code, i.e.&nbsp;you!) are familiar with, so this shouldn’t come as too much of a shock. However, they aren’t a substitute for the generally good coding practices described throughout this guide.</p>
+<p>Large sections of comments should be avoided and if you find that your code needs them, it may be an indication that restructuring your code or using documentation (described <a href="../code-style/documentation.html">later</a>) instead may result in something easier to understand.</p>
+</section>
+<section id="commenting-out-code" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="commenting-out-code"><span class="header-section-number">3.2</span> Commenting out code</h2>
+<p>As mentioned above, comments can be used to prevent a line from executing, which is a useful tool during development. This allows us to test different parameter options and approaches and can be helpful when debugging.</p>
+<p>This being said, when we come to share our code, be this for publishing, dissemination or sending to colleagues, commented-out lines of code are a huge cause for confusion and potential errors in execution.</p>
+<p>Reproducibility is a difficult challenge, hence this guide needing to exist, so when someone receives some code it will often not execute without errors (that’s the problem we’re trying to solve here). This leads the user to then look for sources of error and commented-out lines of code create ambiguity. Should this line be executed? Did my colleague intend to run this line or not?</p>
+<p>Therefore, in most cases it’s a good idea to avoid commenting out actual code when it will be shared.</p>
+<p>In practice, this isn’t always practical, so try to add other comments justifying why a line would be commented out at all. And the more packaged up and professional the codebase, the less you should have commented-out lines of executable code. I wouldn’t expect to see this in a finished toolbox or package, for instance.</p>
+</section>
+<section id="comments-for-controlling-execution---dont-do-it" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="comments-for-controlling-execution---dont-do-it"><span class="header-section-number">3.3</span> Comments for controlling execution - don’t do it!</h2>
+<p>Following on from this, it’s common during development to use comments for controlling execution, setting options and changing parameters. Whilst this will make sense to the person writing the code (at the time) - other users will rarely be able to understand or have confidence in this approach.</p>
+<p>If you’re sharing code and telling the user to “just comment out this line” to get the result they want - this is an indication that you should either split the job of this code into separate functions, or use conditional statements to control the execution.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
