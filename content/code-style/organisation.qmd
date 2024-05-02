@@ -5,26 +5,26 @@ date-format: D MMM, YYYY
 
 # Project Organisation
 
-The first thing that makes a project difficult to reproduce is when you open the project folder to find a big heap of confusingly named scripts.
+One thing that makes a project difficult to reproduce is a disorganised project folder. Adhering to a consistent structure convention mitigates others from opening the project folder to find a big heap of confusingly named scripts.
 
 Use folders/directories to organise your project, so that it is obvious (to you and anyone else who uses your code) where to find what is needed.
 
 At the very top level of your project, why not have something like the following structure?
 
 ```
-├── data/             # directory to contain your data
-│   └── raw/          # all your raw, unprocessed data
-│   └── processed/    # any data that you have altered
-├── figures/          # keep the figures that you produce from your code here
-├── reports/          # a clear folder for your papers or reports for the project
 ├── src/              # source code
-│   └── @MyClass/     # a class directory
-│   └── a_module/     # a directory containing a group of functions or classes with some commonality
+│   ├── @MyClass/     # a class directory
+│   ├── a_module/     # a directory containing a group of functions or classes with some commonality
 │   └── utils/        # a directory containing utility functions
+├── data/             # directory to contain your data
+│   ├── raw/          # all your raw, unprocessed data
+│   └── processed/    # any data that you have altered
+├── output/           # directory to contain your output
+│   ├── figures/      # keep the figures that you produce from your code here
+│   └── reports/      # a clear folder for your papers or reports for the project
 ├── docs/             # documentation
 ├── tests/            # software tests for the project
+├── dependencies      # a file detailing your project's dependencies
 ├── README            # readme file! (essential)
-└── my.prj            # MATLAB project file (read on for more details)
+└── LICENSE           # license file (essential)
 ```
-
-For more in depth guidance on how to organise a project (and loads of other excellent advice) check out the [BES’ guide to Reproducible Code](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf) - I still refer to this guide regularly.
