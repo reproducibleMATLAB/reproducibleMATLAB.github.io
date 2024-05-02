@@ -42,6 +42,8 @@ To make this quick and easy, in the MATLAB editor you can use the following key 
 
 + <kbd>Ctrl</kbd>+<kbd>/</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> on Linux
 
+**Note**: This depends on your MATLAB keyboard settings and can be changed to suit your preference.
+
 Comments are one element of good coding practice that I find most developers (that's people who write code, i.e. you!) are familiar with, so this shouldn't come as too much of a shock. However, they aren't a substitute for the generally good coding practices described throughout this guide.
 
 Large sections of comments should be avoided and if you find that your code needs them, it may be an indication that restructuring your code or using documentation (described [later](documentation.qmd)) instead may result in something easier to understand.
