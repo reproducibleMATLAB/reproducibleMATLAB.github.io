@@ -23,5 +23,5 @@ The third part of these two main parts (:roll_eyes:) is the [extra credit](extra
 ## Contributing
 {{< include ../CONTRIBUTING.md >}}
 
-## Contributors
+
 {{< include ../CONTRIBUTORS.md >}}
