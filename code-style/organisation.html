@@ -338,7 +338,24 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 </header>
 
 
-<p><span class="emoji" data-emoji="construction">🚧</span> <em>Nothing here yet! Check back later.</em> <span class="emoji" data-emoji="construction">🚧</span></p>
+<p>One thing that makes a project difficult to reproduce is a disorganised project folder. Adhering to a consistent structure convention mitigates others from opening the project folder to find a big heap of confusingly named scripts.</p>
+<p>Use folders/directories to organise your project, so that it is obvious (to you and anyone else who uses your code) where to find what is needed.</p>
+<p>At the very top level of your project, why not have something like the following structure?</p>
+<pre><code>├── src/              # source code
+│   ├── @MyClass/     # a class directory
+│   ├── a_module/     # a directory containing a group of functions or classes with some commonality
+│   └── utils/        # a directory containing utility functions
+├── data/             # directory to contain your data
+│   ├── raw/          # all your raw, unprocessed data
+│   └── processed/    # any data that you have altered
+├── output/           # directory to contain your output
+│   ├── figures/      # keep the figures that you produce from your code here
+│   └── reports/      # a clear folder for your papers or reports for the project
+├── docs/             # documentation
+├── tests/            # software tests for the project
+├── README            # readme file! (essential)
+└── LICENSE           # license file (essential)</code></pre>
+<p>You can make use of a <a href="https://github.com/reproducibleMATLAB/matlab-project-template">matlab-project-template</a> GitHub repository which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.</p>
 
 
 
