@@ -58,7 +58,9 @@ csl: nature.csl
 format:
   html:
     from: markdown+emoji
-    highlight-style: a11y-dark
+    syntax-definitions: 
+    - matlab.xml
+    highlight-style: matlab-light.theme
     theme: 
       light: simplex
       dark: solar
