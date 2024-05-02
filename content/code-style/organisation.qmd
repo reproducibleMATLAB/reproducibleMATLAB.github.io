@@ -24,7 +24,6 @@ At the very top level of your project, why not have something like the following
 │   └── reports/      # a clear folder for your papers or reports for the project
 ├── docs/             # documentation
 ├── tests/            # software tests for the project
-├── dependencies      # a file detailing your project's dependencies
 ├── README            # readme file! (essential)
 └── LICENSE           # license file (essential)
 ```
