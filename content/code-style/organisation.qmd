@@ -28,3 +28,5 @@ At the very top level of your project, why not have something like the following
 ├── README            # readme file! (essential)
 └── LICENSE           # license file (essential)
 ```
+
+You can make use of a [matlab-project-template](https://github.com/reproducibleMATLAB/matlab-project-template) GitHub repository which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.
