@@ -29,6 +29,26 @@
         "content",
         "code"
       ]
+    },
+    {
+      "login": "cmtso",
+      "name": "Michael Tso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37928699?v=4",
+      "profile": "http://cmtso.github.io",
+      "contributions": [
+        "content",
+        "code"
+      ]
+    },
+    {
+      "login": "dc2917",
+      "name": "Dan Cummins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45606273?v=4",
+      "profile": "https://dc2917.github.io",
+      "contributions": [
+        "content",
+        "code"
+      ]
     }
   ]
 }
