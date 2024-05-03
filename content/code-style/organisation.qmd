@@ -11,6 +11,8 @@ author:
 
 # Project Organisation
 
+## Directory Structure
+
 One thing that makes a project difficult to reproduce is a disorganised project folder. Adhering to a consistent structure convention mitigates others from opening the project folder to find a big heap of confusingly named scripts.
 
 Use folders/directories to organise your project, so that it is obvious (to you and anyone else who uses your code) where to find what is needed.
@@ -18,10 +20,10 @@ Use folders/directories to organise your project, so that it is obvious (to you 
 At the very top level of your project, why not have something like the following structure?
 
 ```
-├── src/              # source code
+├── source/           # source code
 │   ├── @MyClass/     # a class directory
 │   ├── a_module/     # a directory containing a group of functions or classes with some commonality
-│   └── utils/        # a directory containing utility functions
+│   └── utils/        # a directory containing utility functions, for example
 ├── data/             # directory to contain your data
 │   ├── raw/          # all your raw, unprocessed data
 │   └── processed/    # any data that you have altered
@@ -34,4 +36,14 @@ At the very top level of your project, why not have something like the following
 └── LICENSE           # license file (essential)
 ```
 
-You can make use of a [matlab-project-template](https://github.com/reproducibleMATLAB/matlab-project-template) GitHub repository which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.
+This structure follows several conventions that are common across languages, such as keeping a `README` file in the top-level of your project's directory where users expect to find it, keeping your source code in a directory named `source` and your data and outputs separate from the code.
+
+::: {.callout-note}
+This type of structure works well for relatively straightforward projects such as a piece of analysis or simulation, but if you're building a package, toolbox or similar, there will be more appropriate and conventional structures to use.
+:::
+
+### Templates
+
+One way of saving time is to make use of a project template, we have made one available on GitHub here: [matlab-project-template](https://github.com/reproducibleMATLAB/matlab-project-template){target="_blank"} which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.
+
+If you're not familiar with Git, you can download this repository as a ZIP file, or just make it yourself in your project by creating the relevant directories.
