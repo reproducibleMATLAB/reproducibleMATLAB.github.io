@@ -313,7 +313,16 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#directory-structure" id="toc-directory-structure" class="nav-link active" data-scroll-target="#directory-structure"><span class="header-section-number">6.1</span> Directory Structure</a>
+  <ul class="collapse">
+  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates"><span class="header-section-number">6.1.1</span> Templates</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -353,13 +362,15 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 </header>
 
 
+<section id="directory-structure" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="directory-structure"><span class="header-section-number">6.1</span> Directory Structure</h2>
 <p>One thing that makes a project difficult to reproduce is a disorganised project folder. Adhering to a consistent structure convention mitigates others from opening the project folder to find a big heap of confusingly named scripts.</p>
 <p>Use folders/directories to organise your project, so that it is obvious (to you and anyone else who uses your code) where to find what is needed.</p>
 <p>At the very top level of your project, why not have something like the following structure?</p>
-<pre><code>├── src/              # source code
+<pre><code>├── source/           # source code
 │   ├── @MyClass/     # a class directory
 │   ├── a_module/     # a directory containing a group of functions or classes with some commonality
-│   └── utils/        # a directory containing utility functions
+│   └── utils/        # a directory containing utility functions, for example
 ├── data/             # directory to contain your data
 │   ├── raw/          # all your raw, unprocessed data
 │   └── processed/    # any data that you have altered
@@ -370,9 +381,28 @@ gtag('config', 'G-WMTSZ2TVF9', { 'anonymize_ip': true});
 ├── tests/            # software tests for the project
 ├── README            # readme file! (essential)
 └── LICENSE           # license file (essential)</code></pre>
-<p>You can make use of a <a href="https://github.com/reproducibleMATLAB/matlab-project-template">matlab-project-template</a> GitHub repository which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.</p>
+<p>This structure follows several conventions that are common across languages, such as keeping a <code>README</code> file in the top-level of your project’s directory where users expect to find it, keeping your source code in a directory named <code>source</code> and your data and outputs separate from the code.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This type of structure works well for relatively straightforward projects such as a piece of analysis or simulation, but if you’re building a package, toolbox or similar, there will be more appropriate and conventional structures to use.</p>
+</div>
+</div>
+<section id="templates" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="templates"><span class="header-section-number">6.1.1</span> Templates</h3>
+<p>One way of saving time is to make use of a project template, we have made one available on GitHub here: <a href="https://github.com/reproducibleMATLAB/matlab-project-template" target="_blank">matlab-project-template</a> which contains this directory structure as a template with placeholder information, designed specifically for MATLAB projects.</p>
+<p>If you’re not familiar with Git, you can download this repository as a ZIP file, or just make it yourself in your project by creating the relevant directories.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
