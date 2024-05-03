@@ -35,7 +35,7 @@ book:
   appendices:
     - appendices/code-style-cheatsheet.qmd
     - references.qmd
-    - _license.qmd
+    - license.qmd
     - privacypolicy.qmd
   sidebar: 
     tools:
