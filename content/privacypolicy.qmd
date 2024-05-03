@@ -20,4 +20,4 @@ Please see the [source code](https://github.com/reproducibleMATLAB/reproducibleM
     storage: none
 ```
 
-Online privacy is important to us. If you have any concerns about privacy when using **repliMAT** - please contact David Wilby.
+Online privacy is important to us. If you have any concerns about privacy when using **repliMAT** - please contact David Wilby on the email address found in the [code of conduct](https://github.com/reproducibleMATLAB/reproducibleMATLAB.github.io/blob/main/CODE_OF_CONDUCT.md){target="_blank"}.

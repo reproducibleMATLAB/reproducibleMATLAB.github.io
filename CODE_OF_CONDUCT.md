@@ -77,7 +77,7 @@ This code of conduct and its related procedures also applies to unacceptable beh
 
 ## 10. Contact info
 
-d.wilby@sheffield.ac.uk
+dalby@bas.ac.uk
 
 ## 11. License and attribution
 
